@@ -1,0 +1,563 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./scss/bootstrap.min.css">
+    <link rel="stylesheet" href="./scss/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/vendors/aos/dist/aos.css/aos.css">
+    <link href="./scss/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/main_platformv2.css">
+
+</head>
+
+<body style="font-family: Inter; width: 100%">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div id="snowflakeContainer">
+        <span class="snowflake"></span>
+    </div>
+
+    <div class="wishlistModal">
+        <div class="modalHolder" style="overflow-x: hidden">
+            <!--          <div class="left" scroll="no">-->
+            <!--            <img src="./images/Assets.png" alt="">-->
+            <!--          </div>-->
+            <div class="right" style="padding-bottom: 30px">
+                <div class="btnClose_modal" style="text-align: right">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.7764 2.02143L16.012 0.256958L9.01664 7.25227L2.02134 0.256958L0.256866 2.02143L7.25217 9.01674L0.256866 16.012L2.02134 17.7765L9.01664 10.7812L16.012 17.7765L17.7764 16.012L10.7811 9.01674L17.7764 2.02143Z"
+                            fill="#855CF8" />
+                    </svg>
+                </div>
+                <div class="formWishlist">
+                    <div class="heading">
+                        <h2>Join Bling’s Exclusive Waitlist!</h2>
+
+                    </div>
+                    <p>Enter your details to be one of our first users.</p>
+                    <div class="formScroll" id="formdata">
+                        <div class="input_div" id="name-main-div">
+                            <span>Name*</span>
+                            <div class="input_box" id="name-div">
+                                <img style="width: 20px" src="./images/person.svg" alt="" />
+                                <input type="text" placeholder="John Doe" name="name" id="name"
+                                    onkeydown="remove_errors_highlight();" onclick="nameFocus();"
+                                    style="margin-left: 10px; width: 80%; outline: none;">
+                            </div>
+                        </div>
+                        <div class="input_div" id="bname-main-div">
+                            <span>Business Name</span>
+                            <div class="input_box" id="bname-div">
+                                <img style="width: 20px" src="./images/business_center.svg" alt="" />
+                                <input type="text" placeholder="Company Name" name="company" id="company"
+                                    onclick="businessFocus();" style="margin-left: 10px; width: 80%; outline: none; ">
+                            </div>
+                        </div>
+                        <div class="input_div" id="industry-main-div">
+                            <span>Industry</span>
+                            <div class="input_box" id="industry-div">
+                                <img style="width: 20px" src="./images/business_center.svg" alt="" />
+                                <input type="text" placeholder="Tax Consultant" name="phone" id="industry"
+                                    onclick="industryFocus();" style="margin-left: 10px; width: 80%; outline: none; ">
+                            </div>
+                        </div>
+                        <div class="input_div" id="email-main-div">
+                            <span>Email*</span>
+                            <div class="input_box" id="email-div">
+                                <img style="width: 20px" src="./images/email.svg" alt="" />
+                                <input type="text" placeholder="example@email.com" name="email" id="email"
+                                    onclick="emailFocus();" onkeydown="remove_errors_highlight();"
+                                    style=" margin-left: 10px; width: 80%; outline: none; ">
+                            </div>
+                        </div>
+                        <div class="input_div" id="phone-main-div">
+                            <span>Phone number*</span>
+                            <div class="input_box" id="phone-div">
+                                <img style="width: 20px" src="./images/local_phone.svg" alt="" />
+                                <input type="text" placeholder="123-456-7891" name="phone" id="phone"
+                                    onkeydown="remove_errors_highlight();" onclick="phoneFocus();"
+                                    style="margin-left: 10px; width: 80%; outline: none; ">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="afterjoin">
+                        <p>Thanks for Joining BLING waitlist. </p><br>
+                        <p>As we come near our launch date, we will keep you posted and would activate your account
+                            immediately.
+                        </p>
+                        <br>
+                        <center><strong>FOLLOW US FOR MORE UPDATES</strong><br>
+                            <div
+                                style="display:flex; flex-direction: row;justify-content: space-around; margin: 20px; width: 50%">
+
+                                <a href="https://www.facebook.com/bling.cloud" target="_blank"><img
+                                        src="./images/fbb1.png" style="width: 50px;"></a>
+                                <a href="https://www.instagram.com/bling.cloud" target="_blank"><img
+                                        src="./images/instab1.png" style="width: 50px"></a>
+                                <a href="https://www.linkedin.com/company/bling-communication" target="_blank"><img
+                                        src="./images/linkb3.png" style="width: 50px"></a>
+
+                            </div>
+                        </center>
+                    </div>
+                    <div class="btnSub-div">
+                        <button class="btnSubscribe btnSub" onclick="subscribe()" id="bsubscribe">
+                            <p style="color: white; font-size: 20px" id="btntext">Subscribe</p>
+                            <div class="lds-dual-ring" id="loader"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <nav class="navbar navbar-inverse justify-center shadow-none" role="navigation">
+            <div class="container nav-container" style="max-width: 92%;
+                      width: 89%;">
+                <div class="LogoHolder">
+                    <a class="navbar-brand" href="#"><img src="./images/bling_white_logo.svg" alt="" width="40%"></a>
+                </div>
+                <div class="navbar-header">
+                    <div class="burgerMenu flex">
+                        <button type="button" class="navbar-toggle collapsed btnMenu" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <img src="./images/bling_white_logo.svg" alt="" width="40%">
+                    </div>
+
+                    <div class="mainMenu text-sm navbar-collapse collapse">
+
+                        <a style="color: white" href="platformv2.html">Home</a>
+                        <a style="color: white" href="platformv2.html#pricingplans">Pricing</a>
+                        <a style="color: white" href="blogs.html">Blogs</a>
+
+                        <!-- <a href="#">Contact Us</a> -->
+                    </div>
+                </div>
+                <div class="text-right btnwishHolder">
+                    <!-- <span class="login">login</span> -->
+                    <button class="btn btnwishlist goldish_btn nav-btn" style="outline: none">Join Our Waitlist</button>
+                </div>
+                <!--/.navbar-collapse -->
+            </div>
+            <div class="mobileMenu">
+                <a href="#">Home</a>
+                <a href="#pricingplans">Pricing</a>
+                <a href="blogs.html">Blogs</a>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="container blog-margin privacy-blog-margin" style="margin-bottom: 6%; margin-top: 3%; font-size: 16px;">
+        <center>
+            <h1>Privacy Policy</h1>
+        </center><br>
+        This Privacy Policy outlines how Bling Cloud Technologies LLC (“Bling”, “www.bling.cloud”, “we”, “us”, “our”)
+        and our affiliates collect, use, disclose, and safeguard information about you. We also describe the choices you
+        have about your information.
+        <br><br>
+        We understand the importance of privacy, and accordingly, treat all information received in a responsible
+        manner. Your use of the Site, or your purchase of our Services, constitutes an acceptance of our T&C and this
+        Privacy Policy. If you have any questions regarding this Privacy Policy, please contact us at help@bling.cloud.
+        <br><br>
+        <strong><u>OUR SERVICES</u></strong><br>
+        Bling is an integrated communication platform where we provide technology to the business owners to manage all
+        of their customer communication from a single portal. These communication channels can include but are not
+        limited to Social Media and Business Phone.
+        <br><br>
+        <strong><u>THE INFORMATION WE COLLECT</u></strong><br>
+        We may collect various types of information from you when interacting with our site (www.bling.cloud) and the
+        applications we provide.
+        <br><br>
+        <strong>USING OUR SERVICES:</strong><br>
+        Bling collects “personal information” which is information that can be used to locate, contact, or determine
+        your or your business’s specific identity, that is voluntarily provided for the setup of an account on our site,
+        or when a current account user adds a new location on behalf of its client, or otherwise uses one or more of our
+        services (hereinafter collectively referred to as “personal information”). Specifically, when a user signs up
+        for an account, we may ask the user for their name, email address, business information, among other
+        information, and when the user uses some of our services including completing some of our templates or adding
+        new locations, they may give us certain information about their or their customers’ business including address,
+        telephone numbers, and other information. Such information is co-owned by us and the user. Bling may also
+        collect and display information about a user’s, or their customer’s, search, social and review site pages and/or
+        properties. Such information is subject to this Policy and the policies of the third-party sites from which the
+        information was retrieved. We make no representation or warranty about the privacy policies of third-party
+        sites, so if you are submitting information to any such third-party through our services, you should review and
+        understand that party’s privacy policy before providing your information to them and us.
+        <br><br>
+        We may also receive the following additional types of “aggregate information” which is information about your or
+        your business’s activities on the Site or in connection with our services applications:
+        <br><br>
+        <ul>
+            <li>
+                Log data, which may include your IP address, the address of the web page you visited before using the
+                services, your browser type and settings, your device information (such as make, model, and OS), the
+                date and time when you used the services, information about your browser configuration, language
+                preferences, unique identifiers, and cookies.
+            </li>
+            <li>Usage data and analytics, which may include the frequency of login, and the different types of activity
+                undertaken by users.
+            </li>
+            <li>General Location information, such as IP address and the region in which you are located when you are
+                logging in and using the services.
+            </li>
+            <li>Customer support questions, issues, and general feedback that you choose to provide.</li>
+        </ul>
+        <br><br>
+
+        <strong>FILLING OUT REQUEST FORMS RELATED TO MARKETING SERVICES (DEMO REQUEST, EVENT RSVP, DOWNLOADING CONTENT
+            ETC):</strong><br>
+        If you choose to participate in events and content marketing initiatives (such as webinars, attending in-person
+        events or downloading any of our content assets from www.bling.cloud), or those in which we are affiliated, or
+        request information from us about our Services, we may collect “personal information” about you related to the
+        form, contest, or event; your contact information, such as your name, email address, telephone number,
+        organization name and address; and general information about your organization that you choose to provide, such
+        as annual company revenue, number of business locations, and industry.
+        <br><br>
+        We may also use service providers to obtain additional business-related information about your company such as
+        the organization’s legal name, size, and publicly available revenue, to assist us in offering services that are
+        appropriate to your organization’s needs.
+        <br><br>
+        In addition, we may collect information on email open and click rates, including whether individuals clicked on
+        links, and which web pages are visited after opening the email.
+        <br><br>
+        <strong>BROWSING OUR WEBSITE:</strong><br>
+        When you browse our websites, we collect information about you as described below, some of which is collected
+        automatically.
+        <br><br>
+        When you use automated chat functionality (chatbots) to make an inquiry or other request, we may collect
+        information about you such as your name and email address, your specific request, and information related to
+        your use of our services.
+        <br><br>
+        Bling and our authorized service providers use cookies (as described below) and other similar tracking
+        technologies on our websites and services including web beacons, pixels, and software tokens.
+        <br><br>
+        <ul>
+            <li>
+                If you do not provide us any of your personal information, we are limited in the information we may
+                collect from you. For example, we may be able to determine your IP address for the purposes of
+                administering the site and tracking site usage. However, your IP address may vary each time you visit or
+                it may remain the same depending on the type of Internet connection you are using or the location from
+                which you access the site. We may also collect information about the websites that directed you to the
+                site after you clicked on a text or banner link or an ad from another website, or the day and time you
+                visited the site and how long you spent on the site. We aggregate such information to help us to compile
+                reports as to trends and other behavior about users visiting our site; however such information is
+                anonymous and cannot be tied directly to you.
+            </li>
+            <li>We may also use “cookies” and your personal information to enhance your experience on the site and with
+                the services and to provide you with personalized offers. A cookie is a small data file placed on your
+                computer’s hard drive that contains information that allows us to track your activity on the site. The
+                cookie itself does not contain any personal information; however, if you provide us any personal
+                information, the cookie may act as an identifier to tie your personal information to your IP address or
+                computer. You may choose to delete cookies from your computer’s hard drive at any time or to disable
+                cookies on your computer. If you delete cookies that relate to the site, we may not be able to identify
+                you upon your return to the site. Additionally, if you disable your computer’s cookies, you may not be
+                able to access certain features of the site or services that require that cookies be enabled. The site’s
+                cookies cannot be used to read data from your hard drive and cannot retrieve information from any other
+                cookies created by other websites. Additionally, our cookies cannot be used as a virus, Trojan horse,
+                worm, or any other malicious tool that could impair your use of your computer. Our cookies are used to
+                help us better understand how you and other users use the Site so we can continue to provide a better,
+                more personalized user experience on the Site. We also share website usage information about our Site
+                with those interested in running targeted promotional campaigns on the Site. For this purpose, we and
+                our advertisers track some of the pages that you visit on the Site through the use of pixel tags (also
+                called clear gifs).
+            </li>
+        </ul>
+        <br><br>
+        <strong><u>HOW WE USE THIS INFORMATION</u></strong><br>
+        www.bling.cloud on occasion, may share “personal information” with third-party service providers as we deem
+        necessary for the third-party to fulfill their duties, such as fulfilling orders, processing credit card
+        payments, or other functions necessary to our business. These third-party service providers are not authorized
+        to retain, share, store or use the personal information for any purposes other than to provide the services for
+        which they have been hired to provide. When personal information is submitted, the user agrees that we may use
+        the personal information to make contact with the party. We do not sell, trade or otherwise share personal
+        information with unrelated third parties for their own marketing purposes, however, we may market certain offers
+        on behalf of third parties.
+        <br><br>
+        We use personal, aggregate information and third-party network information in an effort to improve our users’
+        experience on the site and with the services, and to communicate with them about information that they request.
+        We may also use this information to help us target specific services or offers to users, to help us develop and
+        improve the site and services, and to tailor our site and services to the users’ interests.
+        <br><br>
+        We may also disclose “aggregate information” and third-party network information (business profile and content
+        information) to third parties. Aggregate information may be disclosed to third parties for a variety of business
+        reasons, including to advertisers to inform them of the usage habits or characteristics of the interested
+        audience, and to potential investors so that they may better understand our user base, etc. Social content
+        information may be disclosed to third parties and to other users for a variety of reasons, including to give
+        them better insights into general trends and consumer response metrics. Neither aggregate information nor social
+        content information will include any personal information, and we will not disclose any personal information
+        except as expressly stated elsewhere in this Policy.
+        <br><br>
+        In addition to the foregoing, www.bling.cloud may elect to share or transfer your personal information to
+        unrelated third parties: (i) to comply with a legal requirement, judicial proceeding, court order, or legal
+        process served on www.bling.cloud, (ii) to investigate a possible crime, such as fraud or identity theft; (iii)
+        in connection with the sale, purchase, merger, reorganization, liquidation or dissolution of www.bling.clou;
+        (iv) when we believe it is necessary to protect the rights, property, or safety of www.bling.clou or other
+        persons, or (v) as otherwise required or permitted by law.
+        <br><br>
+        <strong><u>WHAT ARE YOUR RIGHTS REGARDING THIS INFORMATION</u></strong><br>
+        When using our services, you may access, update, or correct most of your account information by logging in to
+        your account to edit your profile or organization record.
+        <br><br>
+        If you have requests that cannot be carried out by logging into your account, such as accessing additional
+        information or deleting information about you, please email us at help@bling.cloud. Please note that we may need
+        to retain certain information about you for as long as you maintain an account for our services, to provide you
+        with our services, for record keeping purposes, for payment processing, to comply with our legal and regulatory
+        obligations, to resolve disputes, or to enforce the applicable terms of service or other agreement in place
+        between you (or your organization) and Bling (the “Terms of Service”).
+        <br><br>
+        Requests to access, correct, or delete your information will be handled within thirty (30) days unless they are
+        unusually extensive or complex, in which case we will advise you of the expected timeline for handling your
+        request.
+        <br><br>
+        You may opt-out of marketing communications sent by Bling by notifying us through an email response or you can
+        contact help@bling.cloud.
+        <br><br>
+        <strong><u>HOW DO WE SAFEGUARD YOUR INFORMATION</u></strong><br>
+        We take appropriate security measures to protect against unauthorized access to or unauthorized alteration,
+        disclosure or destruction of data. These include internal reviews of our data collection, storage, and
+        processing practices and security measures, as well as physical security measures to guard against unauthorized
+        access to systems where we store personal information.
+        <br><br>
+        We restrict access to personal information to Bling employees, service providers, and agents who need to know
+        that information in order to operate, develop or improve our services. These individuals are bound by
+        confidentiality obligations and may be subject to discipline, including termination and criminal prosecution, if
+        they fail to meet these obligations. We use Secure Sockets Layer (“SSL”) technology to encrypt and protect the
+        security of your personal information, including but not limited to your credit card number, when it is sent
+        over the Internet. No method of transmission over the Internet, or method of electronic storage, is 100% secure,
+        however. Therefore, while we strive to protect your personal information, we cannot guarantee its absolute
+        security.
+        <br><br>
+        www.bling.cloud processes personal information only for the purposes for which it was collected and in
+        accordance with this policy. We review our data collection, storage, and processing practices to ensure that we
+        only collect, store, and process the personal information needed to provide or improve our services. We take
+        reasonable steps to ensure that the personal information we process is accurate, complete, and current, but we
+        depend on our users to update or correct their personal information whenever necessary.
+        <br><br>
+        <strong><u>HOW LONG DO WE RETAIN YOUR INFORMATION</u></strong><br>
+        When you connect your third-party sites to the Bling Platform, we may fetch, cache, and aggregate the data from
+        the connected sites to display and enable you to modify the information. We retain your information only as long
+        as required to provide the services requested by you, for record-keeping purposes, to comply with our legal
+        obligations, resolve disputes, and enforce the terms for the services.
+        <br><br>
+        After it is no longer necessary for us to retain information about you, we will dispose of it in a secure manner
+        or anonymize the information.
+        <br><br>
+        Aggregated data is used by Bling for analysis, product improvement, and troubleshooting purposes. In some cases,
+        content may continue to exist on the social networks even after you or we delete it from our services, and you
+        will need to contact the relevant third-party network or social network directly if you want it to remove this
+        content.
+        <br><br>
+        <strong><u>CA RESIDENTS PRIVACY RIGHTS</u></strong><br>
+        If you are a consumer as defined in the California Consumer Privacy Act (CCPA), the following provisions apply
+        to you. Definitions of terms are set out in the CCPA.
+        <br><br>
+        Under the CCPA, you may have the following specific rights:<br><br>
+        <ul>
+            <li>
+                The right to know about the personal information collected about you, which we have defined under “The
+                Information We Collect”.
+            </li>
+            <li>
+                The right to have your personal information deleted.
+            </li>
+            <li>The right not to be discriminated against for exercising consumer rights under the CCPA.
+            </li>
+        </ul>
+        <br><br>
+        You may exercise your rights by emailing us at help@bling.cloud
+        <br><br>
+        While we disclose personal information to service providers for the purpose of managing our relationship with
+        you (e.g. distributing marketing communications) and providing the services, we do not sell your personal
+        information and will not do so in the future without providing you with notice and an opportunity to opt-out of
+        such sale as required by law. Similarly, we do not offer financial incentives associated with our collection,
+        use, or disclosure of your personal information.
+        <br><br>
+        <strong><u>DATA SUBJECT RIGHTS</u></strong><br>
+        Right of Access<br><br>
+        <ul>
+            <li>An individual has the right to ask whether we process data about them and to have access to that data.
+            </li>
+        </ul>
+        <br><br>
+        Right to Rectification
+        <br><br>
+        <ul>
+            <li>Where personal data is inaccurate or incomplete, an individual has the right to request that it be
+                corrected or completed.
+            </li>
+        </ul><br><br>
+        Right to Erasure
+        <br><br>
+        <ul>
+            <li>An individual has the right to require that the organization erases personal data without undue delay.
+            </li>
+        </ul><br><br>
+        Right to Restrict Processing
+        <br><br>
+        <ul>
+            <li>An individual can exercise the right to a restriction of processing of their personal data under certain
+                circumstances.
+            </li>
+        </ul><br><br>
+        Right to Data Portability
+        <br><br>
+        <ul>
+            <li>An individual has the right to request that their personal data be provided to them and to transfer that
+                data to another party.
+            </li>
+        </ul><br><br>
+        Right to Object
+        <br><br>
+        <ul>
+            <li>An individual has the right to object to processing under certain circumstances</li>
+        </ul><br><br>
+        <strong><u>HOW TO EXERCISE YOUR DATA SUBJECT RIGHTS</u></strong><br>
+        Bling websites and applications may contain pages through which you can change your preferences or update the
+        PII. You can contact us directly in order to:
+        <br><br>
+        <ul>
+            <li>Update or correct the PII that we store about you;</li>
+            <li>Direct us to render inactive on our systems all your PII; or</li>
+            <li>Make a request related to the data subject rights listed above.</li><br><br>
+            We may be reached at help@bling.cloud.<br><br>
+        </ul>
+
+        <strong>NON-DISCRIMINATION</strong><br>
+        If you choose to exercise any of these rights, we will not deny goods or services to you or provide different
+        quality of services.
+        <br><br>
+        <strong><u>CHILDREN AND PRIVACY</u></strong><br>
+        Our site’s are not directed to children and we will not request personally identifiable information from anyone
+        who we know to be under the age of 18, unless we have obtained verifiable parental consent from a parent or
+        legal guardian. If we become aware that a user under the age of 13 has registered with our site, provided
+        personal information, and www.bling.cloud has not obtained prior verifiable consent from a parent or legal
+        guardian, we will immediately remove the user’s personal information from our files.
+        <br><br>
+        <strong><u>BREACH NOTIFICATION</u></strong><br>
+        It is the policy of Bling to be fair and proportionate when considering the actions to be taken to inform
+        affected parties regarding breaches of personal data. Where a breach is known to have occurred which is likely
+        to result in a risk to the rights and freedoms of individuals, the individuals and any relevant reporting bodies
+        will be informed within 72 hours. This will be managed in accordance with our information security incident
+        response process which sets out the overall process of handling information security incidents.
+        <br><br>
+        <strong><u>LINKS TO OTHER WEBSITES</u></strong><br>
+        The site may contain links to websites operated by other people or companies. Those websites may have their own
+        privacy policy or no privacy policy at all. Bling does not have any responsibility for those websites, and we
+        provide the links solely for the convenience of our visitors.
+        <br><br>
+        <strong><u>BUSINESS TRANSFERS</u></strong><br>
+        In the event that Bling sells substantially all of its assets, or one of Bling’s business units is acquired,
+        personal information, aggregate information and social content information will likely be one of the transferred
+        assets.
+        <br><br>
+        <strong><u>CHANGES TO THIS POLICY</u></strong><br>
+        We may change this Privacy Policy at any time and without prior notice, by posting the revised version of this
+        policy on our site. Your continued use of the site and/or services indicates your consent to our collection of
+        and use of your personal and aggregate information under the then-current policy.
+        <br><br>
+        <strong><u>HOW TO CONTACT US</u></strong><br>
+        If you have any questions or concerns about this policy, please feel free to contact us any time at
+        help@bling.cloud.
+
+    </div>
+
+
+
+    <footer style="display: flex;
+  justify-content: center;">
+        <div class="container faq-nav-container footer-nav-container" style="width: 100%;max-width: 88%;">
+            <div class="topBox flex flex-sb mx-32" style="margin-left: -4px !important; margin-right: 0 !important;">
+                <div class="left">
+                    <a href="#">
+                        <img src="./images/bling_white_logo.svg" alt="" style="width: 28%">
+                    </a>
+                </div>
+                <div class="right">
+                    <div class="menuList">
+                        <a href="faq.html">FAQ</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms & Conditions</a>
+                    </div>
+                    <div class="socMed">
+                        <!--              FB-->
+                        <a href="https://www.facebook.com/bling.cloud" target="_blank">
+                            <svg class="card card-hover" width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <circle opacity="0.2" cx="20" cy="20.0723" r="19" stroke="white" stroke-width="2" />
+                                <rect x="12" y="10.0723" width="16" height="21.3333" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_1497_1882"
+                                            transform="translate(-0.755556 -0.35) scale(0.0222222 0.0166667)" />
+                                    </pattern>
+                                    <image id="image0_1497_1882" width="100" height="100"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAEmklEQVR4nO2dTagWVRjHf89F0yxLU7pWqyi714ggo020Cqk2gouyskuWbaJdKVQro1WBiBAtatOiTy0oqHDV1l1UFCUZYR9eUpQ+7hXSPv4tzgtGvOd9mzNf5z0+P3Azc97nPDM/58zMnZnzgOM4juM4juM4juM4juNMBtZ0QElTwEZgBpgGljbdR8/8ARwHDgOfmNnfTQZvTIikdcBTwFbgiqbiZs48cAB4zsyONxGwthBJBuwCdgMX1c5oMlkEngH2mpnqBKolRNJy4BXgvjpxCuJNYIeZ/Z4aIFnI4Mh4DdiWGqNQ3gG2ph4pUzU63oXLGMbdwBOpP046QgYn8CPAxSOaLRCuRH5N6SNjLgU2MH7b1zd1oh+LpH2Kc1LSdkkXdJJMD0haJukhSadG7Ie9XSUzJWl+hIzrOkkkAyTNjJDy4+A823oSt4z4X7G99QQyQ9LDI/bHzV0ksC3S+W8qeJiKoTB8LUT2yf1V46VcZV0ZWX7YzM4mxJtozOwM4eJlGLF9FSVFSOzq4nRCrFJYjCxfWTVQnfsQpwVcSGYs6TuBrpC0ArgN2ARcD6wB1gKrOXfzeho4SxiCfgY+BfaYWWfDcfFCJG0AngbuAZZHmq2JLN8CrAfmWkhtKMUKkbQEeJbwN7c6D8lubyaj/0eRQgbD07vAHQ2E63QfFXdSV3iE/BbNyOic4oQAO4HNfSeRSlFCJK0lPEqdWIoSAjwKrOg7iToUI0TSUoKQiaYYIYR3wa5qIW7yCwsplCTk1pbivtdS3KGUdB+SKuQv4CPgS+DMf9Z9RXizpjNKEnJNwm+OAlvM7LOmk0mlJCGrK7b/E9hsZl+0kUwqJZ1DVlVsfzA3GVCWkEsqts9OBpQlpOq2ZPn8vyQhReBCMsOFZIYLyQwXkhkuJDOyFiLJJL0oaXHEC82SlPK10u5xMSV9Lmlj4xs2gqyFAHcBj9Hfx6Q3AC902WHuQq7uOwE6/sQ7dyHtf/Aynu+77Cx3ITlwtMvOXMh4XEhmfNdlZy5kPH6E/IvYl0ld8k2XneUu5CBhKqS++NDMfuiyw6yfqZvZCUk3AncCF45p/lLF8B8A749Yf3LM+lbIWggEKcCr49pJqirkYzN7OS2r9sh9yDrvcCGZ4UIyw4VkhgvJDBeSGS4kM1xIZriQzHAhmeFCMsOFZIYLyQwXkhkpQmJP8c7XyggQn4dyoWqgFCHzkeWzkpYlxJtoBts8G1kd21dRUoQciSxfCVSep7YAHiB+hHzdeu8KU40fi7ycfErSTOtJDM+rKrVnDZI0q4anGq98hAxqLh2IrL4MOKQw/Xaxw5fCbNY7gEOEbR7G/pQaIqnlKqYJr8eMKtmwSJjx+ZeUPhLYVLH9t4N/VVlFOGeMK1dx7eB9gErUqbCzE9iT+vvCedzM9qX80EseNc/bwL2dlzwadPgI8EZqjAJ5HXiwTqW2Wnfqg2pkc4SJJ3N47bMvFgjD1FydCm3QbGHJaeBJQmHJNmZ2y5FjwH7g+ZQT+DDaKL1qwE2EK5F1wOVN99EzJ4CfOFd6tVYhScdxHMdxHMdxHMdxHMeZVP4BxnmeneYfebcAAAAASUVORK5CYII=" />
+                                </defs>
+                            </svg>
+                        </a>
+                        <!--              Instagram-->
+                        <a href="https://www.instagram.com/bling_communication" target="_blank">
+                            <svg class="card card-hover" width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle opacity="0.2" cx="20" cy="20.0723" r="19" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M20 11.0723C17.5576 11.0723 17.2505 11.0835 16.2909 11.1263C15.3313 11.1713 14.6776 11.322 14.105 11.5448C13.5044 11.7707 12.9603 12.1251 12.5109 12.5831C12.0531 13.0328 11.6987 13.5768 11.4725 14.1773C11.2497 14.7488 11.0979 15.4035 11.054 16.3598C11.0113 17.3216 11 17.6276 11 20.0734C11 22.5169 11.0113 22.8229 11.054 23.7825C11.099 24.741 11.2497 25.3946 11.4725 25.9673C11.7031 26.559 12.0103 27.0608 12.5109 27.5614C13.0104 28.062 13.5121 28.3703 14.1039 28.5998C14.6776 28.8225 15.3301 28.9744 16.2886 29.0183C17.2494 29.061 17.5554 29.0723 20 29.0723C22.4446 29.0723 22.7495 29.061 23.7103 29.0183C24.6676 28.9733 25.3235 28.8225 25.8961 28.5998C26.4964 28.3737 27.04 28.0194 27.4891 27.5614C27.9897 27.0608 28.2969 26.559 28.5275 25.9673C28.7491 25.3946 28.901 24.741 28.946 23.7825C28.9888 22.8229 29 22.5169 29 20.0723C29 17.6276 28.9888 17.3216 28.946 16.3609C28.901 15.4035 28.7491 14.7488 28.5275 14.1773C28.3013 13.5768 27.9469 13.0328 27.4891 12.5831C27.0398 12.1249 26.4957 11.7705 25.895 11.5448C25.3212 11.322 24.6665 11.1701 23.7091 11.1263C22.7484 11.0835 22.4435 11.0723 19.9978 11.0723H20.0011H20ZM19.1934 12.6945H20.0011C22.4041 12.6945 22.6887 12.7024 23.6371 12.7463C24.5146 12.7856 24.9916 12.933 25.3089 13.0556C25.7285 13.2188 26.0289 13.4145 26.3439 13.7295C26.6589 14.0445 26.8535 14.3438 27.0166 14.7645C27.1404 15.0806 27.2866 15.5576 27.326 16.4351C27.3699 17.3835 27.3789 17.6681 27.3789 20.07C27.3789 22.4719 27.3699 22.7576 27.326 23.706C27.2866 24.5835 27.1392 25.0594 27.0166 25.3766C26.8723 25.7674 26.642 26.1208 26.3427 26.4105C26.0277 26.7255 25.7285 26.9201 25.3078 27.0833C24.9928 27.207 24.5157 27.3533 23.6371 27.3938C22.6887 27.4365 22.4041 27.4466 20.0011 27.4466C17.5981 27.4466 17.3124 27.4365 16.364 27.3938C15.4865 27.3533 15.0106 27.207 14.6934 27.0833C14.3024 26.9392 13.9488 26.7093 13.6584 26.4105C13.3588 26.1203 13.1282 25.7666 12.9834 25.3755C12.8607 25.0594 12.7134 24.5824 12.674 23.7049C12.6313 22.7565 12.6223 22.4719 12.6223 20.0678C12.6223 17.6648 12.6313 17.3813 12.674 16.4329C12.7145 15.5554 12.8608 15.0784 12.9845 14.7611C13.1476 14.3415 13.3434 14.0411 13.6584 13.7261C13.9734 13.4111 14.2726 13.2165 14.6934 13.0534C15.0106 12.9296 15.4865 12.7834 16.364 12.7429C17.1943 12.7046 17.516 12.6934 19.1934 12.6923V12.6945ZM24.8049 14.1885C24.663 14.1885 24.5226 14.2165 24.3916 14.2707C24.2605 14.325 24.1415 14.4046 24.0412 14.5048C23.9409 14.6051 23.8614 14.7242 23.8071 14.8552C23.7528 14.9862 23.7249 15.1267 23.7249 15.2685C23.7249 15.4103 23.7528 15.5508 23.8071 15.6818C23.8614 15.8128 23.9409 15.9319 24.0412 16.0322C24.1415 16.1325 24.2605 16.212 24.3916 16.2663C24.5226 16.3206 24.663 16.3485 24.8049 16.3485C25.0913 16.3485 25.366 16.2347 25.5686 16.0322C25.7711 15.8297 25.8849 15.5549 25.8849 15.2685C25.8849 14.9821 25.7711 14.7074 25.5686 14.5048C25.366 14.3023 25.0913 14.1885 24.8049 14.1885ZM20.0011 15.4508C19.3881 15.4412 18.7793 15.5537 18.2101 15.7817C17.6409 16.0097 17.1228 16.3486 16.6859 16.7787C16.249 17.2089 15.902 17.7217 15.6652 18.2872C15.4284 18.8527 15.3064 19.4597 15.3064 20.0728C15.3064 20.6859 15.4284 21.2929 15.6652 21.8585C15.902 22.424 16.249 22.9368 16.6859 23.3669C17.1228 23.7971 17.6409 24.136 18.2101 24.364C18.7793 24.592 19.3881 24.7045 20.0011 24.6949C21.2145 24.676 22.3717 24.1807 23.2231 23.3159C24.0745 22.4512 24.5516 21.2863 24.5516 20.0728C24.5516 18.8593 24.0745 17.6945 23.2231 16.8297C22.3717 15.965 21.2145 15.4697 20.0011 15.4508ZM20.0011 17.0719C20.7969 17.0719 21.56 17.388 22.1227 17.9507C22.6854 18.5134 23.0015 19.2765 23.0015 20.0723C23.0015 20.868 22.6854 21.6312 22.1227 22.1939C21.56 22.7565 20.7969 23.0726 20.0011 23.0726C19.2054 23.0726 18.4422 22.7565 17.8795 22.1939C17.3169 21.6312 17.0008 20.868 17.0008 20.0723C17.0008 19.2765 17.3169 18.5134 17.8795 17.9507C18.4422 17.388 19.2054 17.0719 20.0011 17.0719Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <!--              Linkedin-->
+                        <a href="https://www.linkedin.com/company/bling-communication" target="_blank"
+                            style="    transform: translateY(-4px);">
+                            <img class="card card-hover" src="./images/Twitter.png" style="width: 40">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomBox flex flex-sb">
+                <div class="left">
+                    <a href="platformv2.html">Home</a>
+                    <!--            <a href="">Features</a>-->
+                    <a href="platformv2.html#pricingplans">Pricing Plans</a>
+                    <a href="contactdemo.html">schedule demo</a>
+                </div>
+                <div class="right">
+                    <span class="text-center">© 2022, Bling Cloud Technologies LLC. All Rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--        <script src="./js/global.min.js"></script>-->
+    <!--        <script src="./js/custom.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./js/blog.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+</body>
+
+</html>

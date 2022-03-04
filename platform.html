@@ -1,0 +1,732 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./tailwindfiles/output.css">
+        <link rel="stylesheet" href="./tailwindfiles/colors.css">
+
+        <link rel="stylesheet" href="./scss/bootstrap.min.css">
+        <link rel="stylesheet" href="./scss/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./scss/main_platform.css">
+        
+
+        <script src="./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body style="font-family: Inter; width: 100%">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="wishlistModal">
+      <div class="modalHolder">
+        <div class="left">
+          <img src="./images/Assets.png" alt="">
+        </div>
+        <div class="right">
+          <div class="btnClose_modal text-right"><img src="./images/close.png" alt=""></div>
+          <div class="formWishlist">
+            <div class="heading">
+              <h2>Join Bling’s <br>
+                Exclusive Waitlist!</h2>
+
+            </div>
+            <div id="formdata">
+            <p>Enter your details to be one of our first users.</p>
+            <div class="input_box">
+              <span>Name*</span>
+              <input type="text" placeholder="John Doe" name="name" id="name" >
+            </div>
+            <div class="input_box">
+              <span>Business Name</span>
+              <input type="text" placeholder="Company Name" name="company" id="company">
+            </div>
+            <div class="input_box">
+              <span>Email*</span>
+              <input type="text" placeholder="example@email.com" name="email" id="email">
+            </div>
+            <div class="input_box">
+              <span>Phone number*</span>
+              <input type="text" placeholder="123-456-7891" name="phone" id="phone">
+            </div>
+            </div>
+            <div id="afterjoin">
+              <p>Thanks for Joining BLING waitlist. </p><br>
+              <p>As we come near our launch date, we will keep you posted and would activate your account immediately.</p><br>
+              <strong>FOLLOW US FOR MORE UPDATES</strong><br>
+              <div style="display:flex;justify-content: space-around; margin: 10px">
+                <center>
+                <button><img src="./images/FB.png"></button>
+                <button><img src="./images/instagram.png"></button>
+                <button><img src="./images/linkedin.png"></button>
+                </center>
+              </div>
+            </div>
+            <button class="btnSubscribe" onclick="subscribe()" id="bsubscribe">
+              <p style="color: white; font-size: 16px" id="btntext">Subscribe</p>
+              <div class="lds-dual-ring" id="loader"></div>
+            </button>
+          </div>  
+        </div>
+      </div>
+    </div>   
+    <nav class="navbar navbar-inverse justify-center shadow-none" role="navigation">
+      <div class="container">
+        <div class="LogoHolder">
+          <a class="navbar-brand" href="#"><img src="./images/bling_white_logo.svg" alt="" width="40%"></a>
+        </div>
+        <div class="navbar-header">
+          <div class="burgerMenu flex">
+            <button type="button" class="navbar-toggle collapsed btnMenu" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <img src="./images/bling.png" alt="">
+          </div>
+
+          <div class="mainMenu text-sm navbar-collapse collapse" >
+            
+              <a style="color: white" href="#">Home</a>
+              <a style="color: white" href="#">Pricing</a>
+              <a style="color: white" href="#">Blogs</a>
+
+              <!-- <a href="#">Contact Us</a> -->
+          </div>
+        </div>
+        <div class="text-right btnwishHolder">
+          <!-- <span class="login">login</span> -->
+          <button class="btn btnwishlist">Join Our Waitlist</button>
+        </div><!--/.navbar-collapse -->  
+      </div>
+      <div class="mobileMenu">
+        <a href="#">Home</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blogs</a>
+
+      </div>
+    </nav>
+    <div class="bannerArea">
+
+        <!-- <div class="blobs"><img src="./images/blobs.png" alt=""></div> -->
+        <!-- <div class="right">
+          <img src="./images/banner.png" alt="social media" class="img-responsive">
+        </div> -->
+      <div class="heroGroup" style="padding-bottom: 10%">
+        <center>
+        <div class="left">
+          <h2 class="title">All your Customer<br>Communication
+            in<br>ONE single place
+          </h2>
+          <p style="font-size: 1.6rem;margin-bottom: 20px;">No More Lost Leads. No More Dissatisfied Customers.<br>Start Bling-ing and stay connected with your customers easily.</p>
+          <button class="px-24 py-3 rounded-xl text-white primary font-semi-bold" style="font-size: 1.4rem; margin-bottom: 10px">Join Our Exclusive Waitlist</button>
+
+
+
+
+          <!-- <span class="btn-warning btn">Request a Demo → </span> -->
+        </div>
+        <div class="mt-10 w-full" style="margin-bottom: 70px">
+          <!-- text -->
+<!--&lt;!&ndash;          width="55%" height="40%"&ndash;&gt;autoplay loop-->
+            <video width="60%" height="45%" muted>
+              <source src="https://images-marketing-bling.s3.us-east-2.amazonaws.com/bling+final+animation_2.mp4"  type="video/mp4">
+            </video>
+          <!-- <img class="img" src="assets/images/landing.png"> -->
+        </div>
+          <div style="width: 80%;">
+            <div class="flex flex-row" style="justify-content: space-around">
+              <div class=" w-80">
+                <img src="assets/images/card1.png" alt="">
+                <p class=" mt-2" style="font-size: 1.5rem; font-weight: 500">We are <span class="primary-highlight font-bold ">building a full suite of integrations for you.</span> There is alot more to come.</p>
+<!--                <p href="" class="text-base font-bold primary-highlight">Try Now <i class="fa fa-arrow-right ml-1"></i></p>-->
+              </div>
+              <div class="w-80">
+                <img src="assets/images/card2.png" alt="">
+                <p class="mt-2" style="font-size: 1.5rem; font-weight: 500"><span class="primary-highlight font-bold ">Stay organized</span> with a really simple, connected, & auto-populating CRM!</p>
+<!--                <p href="" class="text-base font-bold primary-highlight">Try Now <i class="fa fa-arrow-right ml-1"></i></p>-->
+              </div>
+              <div class=" w-80">
+                <img src="assets/images/card3.png" alt="">
+                <p class=" mt-2" style="font-size: 1.5rem; font-weight: 500">You can get the chance to <span class="primary-highlight font-bold ">rate your customers</span> and let the world of business know </p>
+<!--                <p href="" class="text-base font-bold primary-highlight">Try Now <i class="fa fa-arrow-right ml-1"></i></p>-->
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div class="container">
+        <div class="solutionsList" style="overflow: hidden;position: relative;">
+          <div class="soutionsArea">
+            <h4 class="title" style="margin-below: 0px !important;">we provide solutions</h4>
+            <div class="flex flex-sb">
+              <div class="left">
+                <h2 class="problems">Problems your business
+                may have faced</h2>
+              </div>
+              <div class="right" style="padding-left: 0px !important">
+                <p style="font-size: 1.5rem; font-weight: 400">As a business owner with limited employees, it sure can be difficult to manage all things at once.
+                  Handling it all could ultimately break your business. Here are some of the things you might have experienced:</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="solutionsDiv">
+            <div class="flex flex-sb problemList">
+              
+              <div class="flex flex-sb problem rounded-lg shadow-md">
+                <img src="./images/Imagecall.png" alt="">
+                <div class="box inbox">
+                  <span class="titleBox">
+                    Cluttered Inbox
+                  </span>
+                  <p>Messy and unorganized inbox that loses track of recent communication between you and your customer.</p>
+<!--                  <a href="#" class="vectored">get started</a>-->
+                </div>
+              </div>
+              
+              <div class="flex flex-sb problem rounded-lg shadow-md">
+                <img src="./images/Imagemessage.png" alt="" style="width: 30%; ">
+                <div class="box inbox">
+                  <span class="titleBox">
+                    Missed Messages
+                  </span>
+                  <p>Unable to follow-up with potential and returning customers right away, because of limited manpower. </p>
+<!--                  <a href="#" class="vectored">get started</a>-->
+                </div>
+              </div>
+
+              <div class="flex flex-sb problem rounded-lg shadow-md">
+                <img src="./images/Imagephone.png" style="width: 30%;">
+                <div class="box inbox">
+                  <span class="titleBox">
+                    Difficult to manage
+                    all accounts
+                  </span>
+                  <p>No professional digital integration to communicate with your potential and returning customers seamlessly. </p>
+<!--                  <a href="#" class="vectored">get started</a>-->
+                </div>
+              </div>
+
+              <div class="flex flex-sb problem rounded-lg shadow-md">
+                <img src="./images/Frame 1178.png" alt="">
+                <div class="box inbox">
+                  <span class="titleBox">
+                    Missed calls
+                  </span>
+                  <p>Unable to optimize your customers’ unique and seamless experience due to lack of a CRM integration.</p>
+<!--                  <a href="#" class="vectored">get started</a>-->
+                </div>
+              </div>
+
+       
+
+              <div class="flex flex-sb problem rounded-lg shadow-md">
+                
+                <div class="box inbox text-sm">
+                  <p>And Many More</p>
+                  <p>Frustrating, right? Worry not! With us, your problems will soon be ancient history!</p>
+                  <p>Bling brings <span class="primary-highlight font-bold">all your customer communications in ONE single place</span> which is always connected with a simple and auto-populating CRM. </p>
+                </div>
+              </div>
+              <div class="flex flex-sb problem rounded-lg shadow-md">
+                <div class="box inbox">
+                  <p class="primary-highlight font-bold">No More Lost Leads. No More Dissatisfied Customers.</p>
+                  <p>Start Bling-ing and stay connected with your customers easily</p>
+                  <center><span class="secondary  px-32 rounded-2xl py-4 text-white">Join Our Exclusive Waitlist</span></center>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="interactiveArea mx" style="margin-top: 30px">
+      <div class="container">
+        <div class="interactiveHolder">
+          <div class="leftBox" style="padding-bottom: 0px">
+            <h4 class="font-bold" style=" color:#FB8C02">NOW, WHAT CAN WE HELP YOU WITH?</h4>
+            <h2>Easy Social Media Integration</h2>
+            <p class=" text-black mx-32" style="font-size: 1.6rem">Integrate <span class="primary-highlight font-bold">all your social media pages into one single place</span>
+              and communicate with your prospects or customers by receiving and replying to your Facebook and
+              Instagram post comments, ads comments, and messages. We are also working on launching many more
+              integrations to help your business, so stay tuned.</p>
+            <div class="soc_med  flex flex-row justify-center">
+              <img src="./images/fb.svg" alt="" style="width: 10%">
+              <img class="ml-5" src="./images/insta.svg" alt="" style="width: 10%">
+
+            </div>
+            <p style="color: #855CF8; margin: 30px; margin-bottom: 0px; font-size: 2rem">
+              Just play with our interactive portal below <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 800px" class="landing-image">
+      <center><iframe src="chat-demo/index.html" class="" height="600px" width="80%"></iframe></center>
+
+      <div class="mt-12">
+        <center>
+          <p class="text-2xl"><span class="primary-highlight font-bold mb-52">No More Lost Leads. No More Dissatisfied Customers.
+          </span><br> Start Bling-ing and stay connected with your customers easily.</p>
+        </center>
+      </div>
+      <div class="mt-12">
+        <center><span class="primary  px-32 rounded-2xl py-4 text-white">Join Our Exclusive Waitlist</span></center>
+      </div>
+    </div>
+
+            <!-- <div class="btnInteractive">Click on our interactive portal →</div> -->
+
+
+    <div class="integrationBlock">
+      <div class="container text-center">
+        <p class="text-center font-bold" style="color: #FB8C02;">HOLD ON! WHAT ABOUT THE PHONE CALLS AND TEXTS?</p>
+        <h3 class="title primary-highlight font-bold " style="font-size: 40px;">Bling has an inbuilt Business Phone too!</h3>
+        <p style="font-weight: 400; font-size: 1.5 rem">We know you are either using a personal phone number or an expensive business phone service. Don’t compromise on<br> your privacy and save money! Bling Business Phone is designed for business owners - Simple and Effective.</p>
+        <p class=" primary-highlight" style="font-weight: 400; font-size: 1.5rem">You get started in just 2 easy steps:  Choose a Phone Number of your Choice and Area Code.<br>
+          Set up a Customized Greeting and Voicemail. Then, You’re done!</p>
+          
+          <div class="grid grid-cols-3  justify-items-center space-x-0 mx-32 xl:px-80">
+            <div class="flex flex-col bg-white py-12 rounded-3xl justify-center m-5 align-middle" style="width: 25rem">
+              <center><img src="assets/images/phone1.png" width="70" height="50" alt=""></center><br>
+              <p class="primary-highlight font-bold" style="font-size: 1.7rem"> Answer<br> Incoming Calls</p>
+            </div>
+            <div class="flex flex-col bg-white py-12 rounded-3xl justify-center m-5 align-middle" style="width: 25rem">
+              <center><img src="assets/images/phone2.png" width="70" height="50" alt=""></center><br>
+              <p class="primary-highlight font-bold" style="font-size: 1.7rem">Place Unlimited <br>Outgoing Calls</p>
+            </div>
+            <div class="flex flex-col bg-white py-12 rounded-3xl justify-center m-5 align-middle" style="width: 25rem">
+              <center><img src="assets/images/phone3.png" width="70" height="50" alt=""></center><br>
+              <p class="primary-highlight font-bold" style="font-size: 1.7rem">Access your<br> Voicemails</p>
+            </div>
+            <div class="flex flex-col bg-white py-12 rounded-3xl justify-center m-5 align-middle" style="width: 25rem">
+              <center><img src="assets/images/phone4.png" width="70" height="50" alt=""></center><br>
+              <p class="primary-highlight font-bold" style="font-size: 1.7rem">Set up Call<br> Forwarding</p>
+            </div>
+            <div class="flex flex-col bg-white py-12 rounded-3xl justify-center m-5 align-middle" style="width: 25rem">
+              <center><img src="assets/images/phone5.png" width="70" height="50" alt=""></center><br>
+              <p class="primary-highlight font-bold" style="font-size: 1.7rem">Receive Texts</p>
+            </div>
+            <div class="flex flex-col bg-white py-12 rounded-3xl justify-center m-5 align-middle" style="width: 25rem">
+              <center><img src="assets/images/phone6.png" width="70" height="50" alt=""></center><br>
+              <p class="primary-highlight font-bold" style="font-size: 1.7rem">Send Unlimited<br> Texts</p>
+            </div>
+          </div>
+
+        <div class="mt-12">
+          <center>
+            <p class="text-2xl" style="margin: 0px">No More Lost Leads. No More Dissatisfied Customers.</p>
+            <p> Start Bling-ing and stay connected with your customers easily.</p>
+          </center>
+        </div>
+        <div class="mt-12">
+          <center><span class="btn secondary" style="padding: 5px; padding-left: 50px; padding-right: 50px;
+                color: white; border-radius: 10px">Join Our Exclusive Waitlist</span></center>
+        </div>
+        
+      </div>
+    </div>
+    <center><div class="crmFeatures light-bg pt-44 mt-20 mx-32 rounded-3xl" style="width: 75%; text-align: left">
+      <div class="flex flex-row">
+        <div class="mr-20 ml-10 w-2/4" style="padding-right: 5%">
+          <p class="font-bold" style="font-size: 2rem">HOW WOULD YOU KEEP TRACK OF ALL THE COMMUNICATION?</p>
+          <h2 class="primary-highlight font-bold" style="font-size: 4rem">Bling has an Integrated & Auto Populating CRM Easy-peasy!</h2>
+          <p>All your <span class="primary-highlight font-bold">customer communication channels are always connected</span> with our Simple & Auto-Populating CRM so that you won't lose track on any leads or communication — avoid hard-to-use & overwhelming CRM services out there in the market!</p>
+        </div>
+        <div class="w-2/4">
+          <img src="./images/imagecrm.png"  alt="">
+        </div>
+      </div>
+      <div class="CTA  mt-12 pb-12">
+        <center>
+          <h4 class="font-bold primary-highlight">No More Lost Leads. No More Dissatisfied Customers.</h4>
+           <h4 class="text-black">Start Bling-ing and stay connected with your customers easily.</h4>
+           <button class="px-24 mt-4 py-3 rounded-xl text-white primary font-bold text-xl">Join Our Exclusive Waitlist</button>
+
+        </center>
+      </div>
+    </div>
+    </center>
+
+    <div class="rating mx-32 mt-40">
+      <center>
+        <img style="width: 40%;" src="https://images-marketing-bling.s3.us-east-2.amazonaws.com/customer-reviews.gif" alt=""><br>
+      <p class="secondary-highlight font-bold">BLING Buisness Owners,</p>
+      <h2 class="primary-highlight font-bold" style="font-size: 3.7rem">Now, you have the power to rate your<br> customers too & help your business<br> community</h2>
+      <p style="font-size: 1.7rem"><span class="primary-highlight font-bold">Rate your customers!</span> Why is this feature so important for your business? </p>
+      <p style="font-size: 1.7rem">Not all customers are pleasant to work with — some could scam you, give late payments, mistreat your business, or even give you <br>an undeserved low rating. </p>
+      <br>
+      <p style="font-size: 1.7rem"><span class="primary-highlight font-bold">Bling cares about you and your business!</span> This is why we want you, as a business owner, to have a voice in our platform. You can also help other businesses know who they are dealing with by rating and writing a description about the customer. And by the way, all the ratings are anonymous and we ensure complete data privacy.</p>
+      <br>
+      <p class="primary-highlight font-bold" style="font-size: 1.7rem; margin-bottom:0px">Know Whom to do Buisness With</p>
+        <p style="font-size: 1.7rem">
+          Start Bling-ing and stay connected with your customers easily.</p>
+          <button class="px-24 mt-14 py-3 rounded-xl text-white secondary font-bold text-xl">Join Our Exclusive Waitlist</button>
+
+    </center>
+
+    </div>
+
+   
+    
+    
+    <div class="pricing my-32 landing-image" style="padding-bottom: 60px !important; margin-bottom: 0px !important">
+    
+      <div class="title">
+        <h2 class="font-bold primary-highlight text-center" style="font-size: 4.2rem; margin-bottom: 40px">Our Plans are very simple</h2>
+      </div>
+      <div class="plans flex flex-row justify-center" style="font-size: 2.5rem; margin-bottom: 70px !important">
+        <div class="rounded-3xl bg-white shadow-xl p-10" style="width: 25%;">
+
+          <h1 class="font-bold">$0</h1>
+          <p class="font-bold">FREE</p>
+          <p>for <span class="font-bold">1 Month</span></p>
+          <h4 class="secondary-highlight font-bold">Free Trial</h4>
+          <p style="font-size: 1.2rem">Start your free trial! No credit card required</p>
+          <div style="font-size: 1.3rem">
+            <p><i class="fa fa-check secondary-highlight"></i> Facebook Integration</p>
+            <p><i class="fa fa-check secondary-highlight"></i> Instagram Integration</p>
+            <p><i class="fa fa-check secondary-highlight"></i> Auto Populating CRM</p>
+            <p><i class="fa fa-check secondary-highlight"></i> Rate you Customers</p>
+            <p><i class="fa fa-check secondary-highlight"></i> Buisness Phone</p>
+          </div>
+          <br>
+          <center>
+            <span class="rounded-3xl border-2 font-bold secondary-border secondary-highlight px-14 py-4 choose-plan"
+                  style="font-size: 1.2rem">
+            Choose Plan</span></center>
+
+        </div>
+        <div class="rounded-3xl mx-7 bg-white shadow-xl p-10" style="width: 25%">
+
+          <h2 class="font-bold">$19.99</h2>
+          <p class="font-bold">per month</p>
+          <p>or <span class="font-bold">$199 per year</span></p>
+          <h4 class=" font-bold" style="color:#8861F8">Bling Silver</h4>
+          <p style="font-size: 1.2rem">Start your free trial! No credit card required</p>
+          <div style="font-size: 1.3rem">
+            <p><i class="fa fa-check" style="color:#8861F8"></i> Facebook Integration</p>
+            <p><i class="fa fa-check" style="color:#8861F8"></i> Instagram Integration</p>
+            <p><i class="fa fa-check" style="color:#8861F8"></i> Auto Populating CRM</p>
+            <p><i class="fa fa-check" style="color:#8861F8;"></i> Rate you Customers</p>
+            
+            <p style="opacity: 0;">s</p>
+          </div>
+          <br>
+          <center><span style="border-color:#8861F8!important ;background-color:#8861F8; font-size: 1.2rem" class="rounded-3xl border-2 font-bold text-white px-14 py-4 choose-plan"
+                       >Choose Plan</span></center>
+          <br>
+          <div>
+            <p class="font-bold text-lg text-center" style="color:#8861F8">Save 17$ off with our Annual Subscription!</p>
+          </div>
+        </div>
+
+
+        <div class="rounded-3xl bg-white shadow-xl p-10" style="width: 25%">
+
+          <h2 class="font-bold">$19.99</h2>
+          <p class="font-bold">per month</p>
+          <p>or <span class="font-bold">$199 per year</span></p>
+          <h4 class=" font-bold" style="color:#8861F8">Bling Gold</h4>
+          <p style="font-size: 1.2rem">Start your free trial! No credit card required</p>
+          <div style="font-size: 1.3rem">
+            <p><i class="fa fa-check" style="color:#8861F8"></i> Facebook Integration</p>
+            <p><i class="fa fa-check" style="color:#8861F8"></i> Instagram Integration</p>
+            <p><i class="fa fa-check" style="color:#8861F8"></i> Auto Populating CRM</p>
+            <p><i class="fa fa-check" style="color:#8861F8;"></i> Rate you Customers</p>
+            <p><i class="fa fa-check" style="color:#855CF8"></i> Buisness Phone</p>
+
+            <!-- <p style="opacity: 0;">s</p> -->
+          </div>
+          <br>
+          <center><span style="border-color:#8861F8!important ;color:#8861F8; font-size: 1.2rem"
+                        class="rounded-3xl border-2 font-bold  px-14 py-4 choose-plan">Choose Plan</span></center>
+          <br>
+          <div>
+            <p class="font-bold text-lg text-center" style="color:#8861F8">Save 17$ off with our Annual Subscription!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <center>
+          <p class="text-2xl"><span class="primary-highlight font-bold mb-52">No More Lost Leads. No More Dissatisfied Customers.
+          </span><br> Start Bling-ing and stay connected with your customers easily.</p>
+        </center>
+      </div>
+      <div class="mt-12">
+        <center><span class="primary  px-32 rounded-2xl py-4 text-white">Join Our Exclusive Waitlist</span></center>
+      </div>
+    </div>
+    <!-- <div class="problemsFaced">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>Problems you may have encountered</h2>
+          <p>You want your business to thrive and reach your goals, but you can’t always do it alone. We are here to provide the
+          solutions you need.</p>
+        </div>
+        <div class="problems flex flex-sb">
+          <div class="box">
+            <img src="" alt="">
+            <span class="title">Cluttered Inbox</span>
+            <p>Carefully crafted precise design, with harmonious typography and perfect padding around every component</p>
+          </div>
+          <div class="box">
+            <img src="" alt="">
+            <span class="title">Missed messages</span>
+            <p>Built with HTML, CSS and JS. Startup’s code is easy to under-stand and easy to change. No other frameworks needed.</p>
+          </div>
+          <div class="box">
+            <img src="" alt="">
+            <span class="title">New Character</span>
+            <p>Transform your ideas into reality and launch a beautiful site with minimal frustration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="socialMedia">
+      <div class="container flex flex-sb">
+        <div class="left">
+          <h2 class="text-capitalize">easy social media integrations</h2>
+          <p>Connect Bling with your favourite tools that you use daily. </p>
+        </div>
+        <div class="right">
+          <img src="./images/Logos.png" alt="">
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="interactiveBlock">
+      <div class="container">
+        <div class="left">
+          <h3>feature name</h3>
+          <p>Dolore aute cupidatat tempor nisi sint laboris reprehenderit culpa mollit eu duis. Fugiat cupidatat esse veniam nulla
+          minim aute irure occaecat. Sit aliqua ad ex laboris magna enim aliqua consectetur reprehenderit nisi quis adipisicing.</p>
+          <span class="btn btn-white">learn more -></span>
+        </div>
+        <div class="right">
+
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="achievements">
+      <div class="container">
+        <div class="heading">
+          <h2 class="text-center text-capitalize">our achievements</h2>
+        </div>
+        <div class="detailsHolder flex flex-sb">
+         <div class="detailBox">
+           <span class="count">40+</span>
+           <span class="title">Happy Clients</span>
+         </div>
+         <div class="detailBox">
+           <span class="count">540+</span>
+           <span class="title">Projects Completed</span>
+         </div>
+         <div class="detailBox">
+           <span class="count">309</span>
+           <span class="title">Dedicated Members</span>
+         </div>
+         <div class="detailBox">
+           <span class="count">25+</span>
+           <span class="title">Awards Won</span>
+         </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="pricingPlan">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>our pricing plan</h2>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+        <div class="plans flex flex-sb">
+          <div class="box regular">
+             <span class="title">Regular</span>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+             <span class="price">$123.45</span>
+             <span class="btn btn-buynow">buy now</span>
+             <div class="features">
+               <span class="feature">Ipsum veniam ad mollit dolore</span>
+               <span class="feature">Ipsum veniam ad mollit dolore</span>
+               <span class="feature">Ipsum veniam ad mollit dolores</span>
+             </div>
+          </div>
+          <div class="box regular bgPurple">
+             <span class="title">Premium</span>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+             <span class="price">$123.45</span>
+             <span class="btn btn-buynow">buy now</span>
+             <div class="features">
+               <span class="feature">Ipsum veniam ad mollit dolore</span>
+               <span class="feature">Ipsum veniam ad mollit dolore</span>
+               <span class="feature">Ipsum veniam ad mollit dolores</span>
+             </div>
+          </div>
+          <div class="box regular">
+             <span class="title">Extended</span>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+             <span class="price">$123.45</span>
+             <span class="btn btn-buynow">buy now</span>
+             <div class="features ">
+               <span class="feature">Ipsum veniam ad mollit dolore</span>
+               <span class="feature">Ipsum veniam ad mollit dolore</span>
+               <span class="feature">Ipsum veniam ad mollit dolores</span>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+<!--    <div class="testimonials" style="overflow: hidden;">-->
+<!--      <div class="container overflow-hidden">-->
+<!--        <h2 class="">Our users speak</h2>-->
+<!--        <img src="./images/qoute.png" alt="" class="qoute">-->
+<!--        <div class="reviewSlider mx-32">-->
+<!--          <div class="swiper-wrapper">-->
+<!--            <div class="swiper-slide">-->
+<!--              <div class="reviewHolder">-->
+<!--                <div class="reviewBox">-->
+<!--                  <span class="title">Incredible Experience</span>-->
+<!--                  <p>Sint fugiat id esse duis fugiat deserunt ipsum mollit anim adipisicing id officia exercitation eu. Duis sint-->
+<!--                    consequat-->
+<!--                    ipsum deserunt incididunt ullamco ex. Est qui esse laborum cillum nostrud adipisicing aliqua qui non. Qui cillum in-->
+<!--                    ipsum exercitation amet non elit nulla. Culpa pariatur qui do exercitation ut magna esse culpa quis.</p>-->
+<!--                </div>-->
+<!--                <div class="reviewer">-->
+<!--                  <img src="./images/pic.png" alt="">-->
+<!--                  <div class="info">-->
+<!--                    <span class="name">Jane Cooper</span>-->
+<!--                    <span class="title">CEO, ABC CORPORATION</span>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="reviewHolder">-->
+<!--                <div class="reviewBox">-->
+<!--                  <span class="title">Dependable, Responsive, Professional Partner</span>-->
+<!--                  <p>Sint fugiat id esse duis fugiat deserunt ipsum mollit anim adipisicing id officia exercitation eu. Duis sint-->
+<!--                    consequat-->
+<!--                    ipsum deserunt incididunt ullamco ex. Est qui esse laborum cillum nostrud adipisicing aliqua qui non. Qui cillum in-->
+<!--                    ipsum exercitation amet non elit nulla. Culpa pariatur qui do exercitation ut magna esse culpa quis.</p>-->
+<!--                </div>-->
+<!--                <div class="reviewer">-->
+<!--                  <img src="./images/pic.png" alt="">-->
+<!--                  <div class="info">-->
+<!--                    <span class="name">Jane Cooper</span>-->
+<!--                    <span class="title">CEO, ABC CORPORATION</span>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="swiper-slide">-->
+<!--              <div class="reviewHolder">-->
+<!--                <div class="reviewBox">-->
+<!--                  <span class="title">Dependable, Responsive, Professional Partner</span>-->
+<!--                  <p>Sint fugiat id esse duis fugiat deserunt ipsum mollit anim adipisicing id officia exercitation eu. Duis sint-->
+<!--                    consequat-->
+<!--                    ipsum deserunt incididunt ullamco ex. Est qui esse laborum cillum nostrud adipisicing aliqua qui non. Qui cillum in-->
+<!--                    ipsum exercitation amet non elit nulla. Culpa pariatur qui do exercitation ut magna esse culpa quis.</p>-->
+<!--                </div>-->
+<!--                <div class="reviewer">-->
+<!--                  <img src="./images/pic.png" alt="">-->
+<!--                  <div class="info">-->
+<!--                    <span class="name">Jane Cooper</span>-->
+<!--                    <span class="title">CEO, ABC CORPORATION</span>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="reviewHolder">-->
+<!--                <div class="reviewBox">-->
+<!--                  <span class="title">Incredible Experience</span>-->
+<!--                  <p>Sint fugiat id esse duis fugiat deserunt ipsum mollit anim adipisicing id officia exercitation eu. Duis sint-->
+<!--                    consequat-->
+<!--                    ipsum deserunt incididunt ullamco ex. Est qui esse laborum cillum nostrud adipisicing aliqua qui non. Qui cillum in-->
+<!--                    ipsum exercitation amet non elit nulla. Culpa pariatur qui do exercitation ut magna esse culpa quis.</p>-->
+<!--                </div>-->
+<!--                <div class="reviewer">-->
+<!--                  <img src="./images/pic.png" alt="">-->
+<!--                  <div class="info">-->
+<!--                    <span class="name">Jane Cooper</span>-->
+<!--                    <span class="title">CEO, ABC CORPORATION</span>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="swiper-pagination"></div>-->
+<!--          <div class="swiper-button-prev"></div>-->
+<!--          <div class="swiper-button-next"></div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+    <div class="getstarted">
+      <div class="container text-center">
+        <h2>Get started with Bling today</h2>
+        <p>Join our waitlist today and get free access to the application.</p>
+        <a href="#">Schedule a Demo</a>
+      </div>
+    </div>
+    
+
+    <footer>
+      <div class="container ">
+        <div class="topBox flex flex-sb mx-32">
+          <div class="left">
+            <a href="#">
+              <img src="./images/blinglogo.png" alt="">
+            </a>
+          </div>
+          <div class="right">
+            <div class="menuList">
+              <a href="#">FAQ</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="socMed">
+              <a href=""><img src="./images/FB.png" alt=""></a>
+              <a href=""><img src="./images/instagram.png" alt=""></a>
+              <a href=""><img src="./images/instagram.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="bottomBox flex flex-sb mx-32">
+          <div class="left">
+            <a href="">Home</a>
+            <a href="">Features</a>
+            <a href="">Pricing Plans</a>
+            <a href="">schedule demo</a>
+          </div>
+          <div class="right">
+            <span>© 2022 Bling. All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  </body>
+</html>

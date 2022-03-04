@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bling</title>
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="./assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="./assets/vendors/aos/dist/aos.css/aos.css">
+  <link rel="stylesheet" href="./assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/vendors/owl.carousel/dist/assets/owl.theme.default.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="assets/css/style1.css">
+  <link rel="stylesheet" href="assets/css/custombling.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/triangulation.js"></script>
+  <script type="text/javascript" src="assets/js/reception.js"></script>
+  <script type="text/javascript" src="./chat.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body style="height: 100vh; width: 100%;">
+<header id="header">
+  <div class="container" style="position: absolute; top: 0px; left: 0px; z-index: 1">
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding-top:2px; padding-bottom: 10px">
+      <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-between">
+          <img class="pl-3 d-block d-lg-none" src="./assets/images/bling_logo.png" style="width: 45%" alt="">
+          <button class="d-inline-block d-lg-none navbar-toggler border-0 pt-2" type="button"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span>x</span>
+          </button>
+        </div>
+        <div class="d-lg-flex">
+          <ul class="navbar-nav navbar-nav-right align-items-center pt-3 pt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link active" href="receptionist.html">Receptionist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurant_backup.html">Restaurant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-center pt-2 pt-lg-0">
+            <li class="nav-item">
+              <button class="btn btn-secondary font-weight-medium btn-up"
+                      onclick="window.location.href='signup.html'">Sign Up</button>
+            </li>
+            <li class="nav-item mt-2 mt-lg-0">
+              <button class="btn btn-primary font-weight-bold btn-up"
+                      onclick="window.location.href='schedule_call.html'">Schedule Call</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="justify-content-end">
+        <a class="navbar-brand" href="#" style="margin: 0px"><img src="assets/images/bling_logo.png" style="width: 100px;" alt=""></a>
+      </div>
+  </nav>
+  <!-- partial -->
+</div>
+</header>
+  <div class="row overflow-hidden" style="width: 100%; margin: 0px;">
+    <div class="col-12 col-lg-5">
+      <div style="padding: 50px; padding-top: 100px">
+        <h1 style="font-family:Open Sans !important; font-weight: bold !important; font-size:40px"><u>Virtual Receptionist</u></h1>
+        <h3 style="margin-bottom: 30px; font-family:Open Sans !important"><i>For your Business</i></h3>
+        <p style="font-family:Open Sans !important; font-size: 20px">You Focus on your business and Let Bling handles all your calls.</p>
+        <br>
+        <p style="font-family:Open Sans !important; font-size: 20px">Unlimited Inbound and Outbound calls.</p><br>
+        <button class="btn btn-primary font-weight-bold btn-up"
+              onclick="window.location.href='signup.html'">GET STARTED</button>
+      </div>
+    </div>
+    <div class="col-12 col-lg-7" style="padding: 0px; height: 100vh">
+      <div class="backgroundhero">
+      </div>
+    </div>
+  </div>
+  <div class="details-wrapper">
+    <div class="container">
+      <div data-aos="fade-up" class="partner-content-wrapper">
+        <h3 class="text-center display-2" style="margin-top: 50px">Our Trusted Partners</h3>
+        <h2 class="text-center text-muted font-weight-normal display-5"></h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="d-flex justify-content-around">
+              <div class="image-box pb-4">
+                <img class="img-fluid" src="./assets/images/partner2.png" alt="">
+              </div>
+              <div class="image-box pb-4">
+                <img class="img-fluid" src="./assets/images/partner3.png" alt="">
+              </div>
+              <div class="image-box pb-4">
+                <img class="img-fluid" src="./assets/images/partner4.png" alt="">
+              </div>
+              <div class="image-box pb-4 pr-0">
+                <img class="img-fluid" src="./assets/images/partner5.png" alt="">
+              </div>
+              <div class="image-box pb-4" style="margin-left: 5%;">
+                <img class="img-fluid" src="./assets/images/wing.png" style="width: 60%;" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-wrapper" style="padding-top: 70px">
+    <div class="container">
+      <div class="dashboard-content-wrapper" style="padding-bottom: 70px">
+        <div class="row overflow-hidden">
+          <center><div data-aos="fade-right">
+            <h2 class="text-center display-2">What Bling Will Do For You</h2>
+            <h4 class="font-weight-light w-75">We are your super-human LIVE RECEPTIONIST service here to make your life easier by taking all your
+              incoming phone calls and doing your outgoing calls.</h4>
+            <div class="row" style="margin-top:70px">
+              <div class="col-sm-6 col-lg-3">
+                <div class="card card-hover" style="padding: 10px;height: 220px ">
+                  <center><img class="img-fluid" src="./assets/images/incoming.png" style="width: 50px" alt=""></center>
+                  <h4 style="font-family:Open Sans; font-weight: bold; font-size:18px">Answer Incoming Calls</h4>
+                  <p style="text-align: left">Answer all simultaneous incoming calls</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card mb-4 card-hover" style="padding: 10px; height: 220px">
+                  <center><img class="img-fluid" src="./assets/images/outgoing-call.png" style="width: 50px" alt=""></center>
+                  <h4 style="font-family:Open Sans; font-weight: bold; font-size:18px">Place outgoing calls to your customers</h4>
+                  <p style="text-align: left">Callback customers and follow up on their inquiries</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card mb-4 card-hover" style="padding: 10px;height: 220px">
+                  <center><img class="img-fluid" src="./assets/images/text.png" style="width: 50px" alt=""></center>
+                  <h4 style="font-family:Open Sans; font-weight: bold; font-size:18px">Send Text/ Emails</h4>
+                  <p style="text-align: left">Send text messages and emails</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card mb-4 card-hover" style="padding: 10px; height: 220px">
+                  <center><img class="img-fluid" src="./assets/images/dashboard-mini4.svg" style="width: 50px" alt=""></center>
+                  <h4 style="font-family:Open Sans; font-weight: bold; font-size:18px">Call Filtering</h4>
+                  <p style="text-align: left">Filter all spam and prank calls</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card mb-4 card-hover" style="padding: 10px; height: 220px">
+                  <center><img class="img-fluid" src="./assets/images/feedback.png" style="width: 50px" alt=""></center>
+                  <h4 style="font-family:Open Sans; font-weight: bold; font-size:18px">Call Surveys/ Feedbacks</h4>
+                  <p style="text-align: left">Callback customers to get their feedback on your service/ Business</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card mb-4 card-hover" style="padding: 10px; height: 220px">
+                  <center><img class="img-fluid" src="./assets/images/appointment.png" style="width: 50px" alt=""></center>
+                  <h4 style="font-family:Open Sans; font-weight: bold; font-size:18px">Appointment Setup & confirmation calls</h4>
+                  <p style="text-align: left">Help setup appointments in your calendar.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card mb-4 card-hover" style="padding: 10px; height: 220px">
+                  <center><img class="img-fluid" src="./assets/images/call.png" style="width: 50px" alt=""></center>
+                  <h4 style="font-family:Open Sans; font-weight: bold; font-size:18px">Customer Service</h4>
+                  <p style="text-align: left">Help customers answer all general inquiries or provide them details about your business</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card mb-4 card-hover" style="padding: 10px; height: 220px">
+                  <center><img class="img-fluid" src="./assets/images/voicemail.png" style="width: 50px" alt=""></center>
+                  <h4 style="font-family:Open Sans; font-weight: bold; font-size:18px">Off Business Hours Voicemail
+                    + callback the next day</h4>
+                  <p style="text-align: left">Custom voicemails</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+<div style="background-image: url('./assets/images/bg-img-1.svg'); background-repeat: no-repeat; background-position: center;">
+  <div class="row overflow-hidden" style="margin: 20px; padding-bottom: 54px;padding-top: 20px;">
+    <div class="col-sm-6 col-lg-5">
+      <p style="font-family: Open Sans; font-weight: bold; font-size: 30px">You will Get access to our amazing Bling portal</p>
+      <div style="text-align: justify">
+        <p>Track all your call recordings via bling portal. Message your customer support anytime. They will respond back withing minutes.</p>
+        <p>Turn off or turn on your service at your will. Forward calls to your number anytime.</p>
+        <p>We are just a message away on Bling portal. Your representatives will be follow instructions the minute after receiving your message. </p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6">
+      <div data-aos="fade-left">
+        <img src="./assets/images/portal.png" alt="" style="width: 110%; border-radius: 20px ">
+      </div>
+    </div>
+    <div class="col-lg-1">
+    </div>
+  </div>
+  <div class="carousel-wrapper" style="padding-top: 30px;">
+    <h2 class="text-center display-2" style="margin-bottom: 40px;">What Bling is Doing For it's Customers</h2>
+    <div class="owl-carousel owl-theme" id="people-carousel">
+      <div class="item">
+        <div class="carousel-content-wrapper mb-2 mt-2" style="background-color: #FEF9E7">
+          <div class="carousel-content">
+            <h4 class="font-weight-medium">NAIL SPA</h4>
+            <h5 class="font-weight-medium">Houston, Taxes</h5>
+            <p class="text-color pt-2" style="padding-right: 20px;">Answer all incoming phone calls and answer any questions including pricing, hours,
+              location etc. Schedule appointments with the stylists (as well as rescheduling). and send confirmation texts automatically.
+              Sending out feedback surveys as well as promotional offers via email.
+              Communicating with other vendors as well as incoming deliveries.
+            </p>
+          </div>
+          <div class="carousel-image">
+            <img class="img-fluid" src="./assets/images/nails.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel-content-wrapper mb-2 mt-2" style="background-color: #FCF3CF">
+          <div class="carousel-content">
+            <h4 class="font-weight-medium">LAWYER FIRM</h4>
+            <h5 class="font-weight-medium">Los Angeles, California</h5>
+            <p class="text-color pt-2" style="padding-right: 20px;">Answering all incoming phone calls and answering all queries.
+              Scheduling initial appointments as well as following up via text & email after appointment.
+              Calling all customers who visit website (or yelp) and actively trying to schedule more and more appointments.
+              Making outgoing calls to current clientele and following up for documents (as per lawyer's instructions).“
+            </p>
+          </div>
+          <div class="carousel-image">
+            <img class="img-fluid" src="./assets/images/courthouse-slider1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel-content-wrapper mb-2 mt-2" style="background-color: #F9E79F">
+          <div class="carousel-content">
+            <h4 class="font-weight-medium">PROPERTY LEASING OWNER</h4>
+            <h5 class="font-weight-medium">East Coast</h5>
+            <p class="text-color pt-2" style="padding-right: 20px;">Answer all incoming "maintainance" phone call from current tenants and
+              scheduling repairs & fixes, answering queries for new leases,
+              open houses, as well as general information. Calling and following up with current tenants for
+              unpaid rent issues, complaints, as well as End of Term. Sending text & email reminders.
+              Coordinating with service providers and vendors.
+            </p>
+          </div>
+          <div class="carousel-image">
+            <img class="img-fluid" src="./assets/images/leasing.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-image: url('./assets/images/bback.png'); background-repeat: no-repeat; background-position: down;background-size: cover;">
+    <center><img data-aos="zoom-in" src="./assets/images/tags.png" style="width: 80%; margin-top: -100px"/></center>
+  </div>
+
+  <div style="background-image: url('./assets/images/bg-img-3.svg'); background-repeat: no-repeat; background-position: down">
+    <div class="container" style="margin-top: 100px;">
+      <h2 class="text-center display-2">What Customer's are Saying</h2>
+      <h4 class="text-center" style="font-family: Open Sans">We will always be there for you as a trusted partner, ready to help</h4>
+      <div class="row pb-5 pt-5 overflow-hidden">
+        <div data-aos="fade-up" class="col-sm-6 col-md-6">
+          <div class="cardnoshadow mb-4 card-hover">
+            <div style=" box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); border-radius: 15px; padding: 0px">
+              <img class="img-fluid" src="./assets/images/mortgage.png" style="border-radius: 15px 15px 0px 0px; height: 230px; width:100%" alt=""/>
+              <div class="img-mini-box" style="margin-left: 30px; margin-top: -40px"><img src="./assets/images/carousel1.png" alt=""> </div>
+              <div style="padding: 1.88em"><p class="feature-sub-head font-italic text-color">Bling has made my life 10x simpler.
+                I don't even know how we were running for this long without them. They are so consistent in reaching out to mortgage
+                companies for me that I almost feel like I have another employee working for me.</p>
+                <h6 class="text-muted">Insurance Company</h6>
+                <h5>Sarah H.</h5></div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="col-sm-6 col-md-6">
+          <div class="cardnoshadow mb-4 card-hover">
+            <div style=" box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); border-radius: 15px; padding: 0px">
+              <img class="img-fluid" src="./assets/images/lawback1.jpeg" style="border-radius: 15px 15px 0px 0px; height: 230px; width:100%" alt="" />
+              <div class="img-mini-box" style="margin-left: 30px; margin-top: -40px"><img src="./assets/images/carousel2.png" alt=""> </div>
+              <div style="padding: 1.88em"><p class="feature-sub-head font-italic text-color">They never miss a single phone call. My business is up almost 50% and my clients are happier than ever.
+                Bling sends them regular texts for things that I ask of them. Something I could never think possible.
+                We are already thinking about getting them to help out more.</p>
+                <h6 class="text-muted">Lawyer</h6>
+                <h5>Adam K.</h5></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-wrapper" style="padding-top: 0px; background-color: black">
+    <div class="tab-wrapper" style="">
+      <div class="container">
+        <h2 class="text-center display-2" style="color: white; padding-top: 100px">Fair, simple pricing for all.</h2>
+        <h4 class="text-center font-weight-light display-4" style="color: #FFD700;" >Select a plan that suits your budget and
+          requirements from the following
+          list of pricing plans.</h4>
+        <div class="tab-body">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-4">
+                  <div class="card bg-white card-highlight card-hover">
+                    <div data-aos="fade-right" class="card-body" style="padding: 0px;">
+                      <div style="background-image: linear-gradient(#FFD700, #fdfd96); border-radius: 5px; padding:10px">
+                        <center>
+                          <img src="./assets/images/para.png" style="margin-bottom: 15px; width: 40px"/>
+                          <h4 class="m-0">Bling Basic</h4>
+                        </center>
+                      </div>
+                      <div style="padding: 20px">
+                        <center><div class="tab-title d-inline-block">
+                          <h1 class="d-inline">$</h1>449
+                        </div>
+                          <h3 class="d-inline-block">/monthly</h3>
+                        </center>
+                        <table>
+                          <tr>
+                            <td style="width: 30px"><img src="./assets/images/tick.png"/></td>
+                            <td><p class="text-muted">Number of Calls</p></td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/images/tick.png" /></td>
+                            <td><p class="text-muted">Voicemail Enabled</p></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><p class="text-muted">Text Message</p></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><p class="text-muted">Callbacks</p></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><p class="text-muted">Call Forwarding</p></td>
+                          </tr>
+                        </table>
+                        <center><button class="btn btn-primary font-weight-bold btn-up"
+                                        onclick="window.location.href='signup.html'">GET IT NOW</button></center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                  <div class="card bg-white card-highlight card-hover">
+                    <div data-aos="fade-left" class="card-body" style="padding: 0px;">
+                      <div style="background-image: linear-gradient(#FFD700, #fdfd96); border-radius: 5px; padding:10px">
+                        <center>
+                          <img src="./assets/images/plane (1).png" style="margin-bottom: 15px; width: 50px"/>
+                          <h4 class="m-0">Bling Plus</h4>
+                        </center>
+                      </div>
+                      <div style="padding: 20px">
+                        <center><div class="tab-title d-inline-block">
+                          <h1 class="d-inline">$</h1>599
+                        </div>
+                          <h3 class="d-inline-block">/monthly</h3>
+                        </center>
+                        <table>
+                          <tr>
+                            <td style="width: 30px"><img src="./assets/images/tick.png"/></td>
+                            <td><p class="text-muted">Number of Calls</p></td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/images/tick.png" /></td>
+                            <td><p class="text-muted">Voicemail Enabled</p></td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/images/tick.png" /></td>
+                            <td><p class="text-muted">Text Message</p></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><p class="text-muted">Callbacks</p></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><p class="text-muted">Call Forwarding</p></td>
+                          </tr>
+                        </table>
+                        <center><button class="btn btn-primary font-weight-bold btn-up"
+                                        onclick="window.location.href='signup.html'">GET IT NOW</button></center>
+                        <div class="ribbon">
+                          <div class="ribbon-inner">
+                            <p>BEST</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="card bg-white card-highlight card-hover">
+                    <div data-aos="fade-left" class="card-body" style="padding: 0px;">
+                      <div style="background-image: linear-gradient(#FFD700, #fdfd96); border-radius: 5px; padding:10px">
+                        <center>
+                          <img src="./assets/images/rocket (1).png" style="margin-bottom: 15px; width: 50px"/>
+                          <h4 class="m-0">Bling Pro</h4>
+                        </center>
+                      </div>
+                      <div style="padding: 20px">
+                        <center><div class="tab-title d-inline-block">
+                          <h1 class="d-inline">$</h1>799
+                        </div>
+                          <h3 class="d-inline-block">/monthly</h3>
+                        </center>
+                        <table>
+                          <tr>
+                            <td style="width: 30px"><img src="./assets/images/tick.png"/></td>
+                            <td><p class="text-muted">Number of Calls</p></td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/images/tick.png" /></td>
+                            <td><p class="text-muted">Voicemail Enabled</p></td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/images/tick.png" /></td>
+                            <td><p class="text-muted">Text Message</p></td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/images/tick.png" /></td>
+                            <td><p class="text-muted">Callbacks</p></td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/images/tick.png" /></td>
+                            <td><p class="text-muted">Call Forwarding</p></td>
+                          </tr>
+                        </table>
+                        <center><button class="btn btn-primary font-weight-bold btn-up"
+                                        onclick="window.location.href='signup.html'">GET IT NOW</button></center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="dashboard-wrapper" style="padding-top: 50px">
+    <h2 class="text-center display-3 font-weight-bold">As easy as...</h2>
+    <div class="row overflow-hidden" style="margin: 50px">
+      <div data-aos="zoom-in" class="col-sm-6 col-md-4">
+        <div class="card mb-4 card-hover" style="border-radius: 20px">
+          <div class="card-body" style="background-image: linear-gradient(#FFD700, #fdfd96); border-radius: 20px;">
+            <div class="d-flex">
+              <img src="./assets/images/feature1.svg" alt="">
+              <h4 class="pt-2 pl-3">1. Sign Up</h4>
+            </div>
+            <p class="feature-sub-head pt-3 text-color">Sign up for the service on the site. Get a Bling number. Get a callback to
+              discuss your requirements. </p>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="col-sm-6 col-md-4">
+        <div class="card mb-4 card-hover" style="border-radius: 20px">
+          <div class="card-body" style="background-image: linear-gradient(#FFD700, #fdfd96); border-radius: 20px">
+            <div class="d-flex">
+              <img src="./assets/images/feature2.svg" alt="">
+              <h4 class="pt-2 pl-3">2. Call Forwarding</h4>
+            </div>
+            <p class="feature-sub-head pt-3 text-color"> We forward all your phone calls to a dedicated Bling number
+              (don't worry, it's super easy and takes less than 2 mins)</p>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="col-sm-6 col-md-4">
+        <div class="card mb-4 card-hover" style="border-radius: 20px">
+          <div class="card-body" style="background-image: linear-gradient(#FFD700, #fdfd96); border-radius: 20px">
+            <div class="d-flex">
+              <img src="./assets/images/feature3.svg" alt="">
+              <h4 class="pt-2 pl-3">3. You are Happy</h4>
+            </div>
+            <p class="feature-sub-head pt-3 text-color">Bling takes 100% of your phone calls.
+              You and your customers are very happy (it's literally that easy). </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 100px; margin-bottom: 50px">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-6">
+        <div data-aos="flip-down">
+          <div class="card-body" style="margin-left: 20px;box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); border-radius: 15px; background-color: yellow; ">
+            <div style="display: flex">
+              <div style="display: flex; flex-direction: column">
+                <h1 style="color: black; margin-top: 30px; font-size:50px; font-weight: bold">$200 Credit</h1>
+                <p style="color: black; margin-top: 20px; font-family: roboto">Join this Week</p>
+                <button class="btn font-weight-medium btn-up"
+                        type="submit" style="background-color: black; color: white"
+                        onclick="window.location.href='signup.html'">GET STARTED NOW</button>
+              </div>
+
+              <img src="./assets/images/moneyback.png" style="width: 40%;" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <p style="font-family: Poppins;  font-weight: bold; font-size: 40px">What are you waiting for?</p>
+        <p style="font-family: Poppins;  font-weight: bold; font-size: 24px">Lets get you started</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="background-color: black; padding:25px; border-radius: 5px">
+    <center><div class="row">
+      <div class="col-lg-3 col-md-2 col-sm-2">
+        <p style="color: white; font-size: 50px; "> 1,200 </p>
+        <p style="color: white; font-size: 20px"> calls </p>
+      </div>
+      <div class="col-lg-3 col-md-2 col-sm-2">
+        <p style="color: white; font-size: 50px"> 10 </p>
+        <p style="color: white; font-size: 20px"> clients </p>
+      </div>
+      <div class="col-lg-3 col-md-2 col-sm-2">
+        <p style="color: white; font-size: 50px"> 10,000 </p>
+        <p style="color: white; font-size: 20px"> hours </p>
+      </div>
+      <div class="col-lg-3 col-md-2 col-sm-2">
+        <p style="color: white; font-size: 50px">20,000</p>
+        <p style="color: white; font-size: 20px"> happy customers </p>
+      </div>
+    </div></center>
+  </div>
+
+  <div class="bottom-wrapper">
+    <div class="gradient-wrapper" style="background-image: url('./assets/images/footerback.jpg');">
+
+      <div style="padding:30px">
+        <center>
+          <p style="color: black; font-weight: bold;  font-family: Poppins; font-size: 30px">We will pick the call you are always busy to take</p>
+          <p style="color: black; font-weight: bold;  font-family: Poppins; font-size: 30px"> and we will assist your clients in anyway we can</p>
+          <button class="btn btn-primary font-weight-bold btn-up"
+                  onclick="window.location.href='signup.html'" style="margin-top: 20px; background-color: black; color: yellow">GET STARTED</button></center>
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+      <footer style="padding: 40px">
+        <div class="row footer-border pb-5">
+          <div class="col-sm-4 col-lg-3">
+            <img src="assets/images/bling_logo.png" style="width: 100px" alt="">
+            <p class="text-muted">Your Virtual receptionist to accept all your incoming calls.</p>
+          </div>
+          <div class="col-sm-4 col-lg-2 pl-lg-5">
+            <h5>Contact</h5>
+            <ul class="pl-0 text-color" style="color: black !important">
+              <li><a href="#">24/7 Chat</a></li>
+              <li><a href="schedule_Call.html">Schedule Call</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
+              <li><a href="#">Email</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-2">
+            <h5>Support</h5>
+            <ul class="pl-0 text-color">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-6 col-lg-3">
+            <h5>Social</h5>
+            <div class="d-flex">
+              <div class="social-round-box">
+                <a href="#"><span class="mdi mdi-facebook"></span></a>
+              </div>
+              <div class="social-round-box">
+                <a href="#"><span class="mdi mdi-linkedin"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-color pt-5">© 2021 Bling Cloud Technologies. All rights reserved.</p>
+      </footer>
+      <!-- partial -->
+    </div>
+  </div>
+</div>
+</div>
+  <!-- inject:js -->
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="./assets/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="./assets/vendors/aos/dist/aos.js/aos.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="./assets/js/demo.js"></script>
+  </div>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

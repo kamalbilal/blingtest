@@ -1,0 +1,783 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.header-logo > img {
+	width: 120px;
+	height: auto;
+	margin-left: 80px;
+	margin-top: 20px;
+}
+
+.btn-try {
+	position: absolute;
+	width: 10%;
+	height: 40px;
+	left: 1050px;
+	top: 20px;
+	background: #ffb400;
+	font-weight: 600;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	z-index: 1;
+	cursor: pointer;
+}
+.hero-img > img {
+	position: absolute;
+	width: 100%;
+	height: 740.76px;
+	left: 35px;
+	top: 0px;
+	filter: drop-shadow(-4px 4px 150px rgba(0, 0, 0, 0.1));
+}
+.hero-backgb1 > img {
+	position: absolute;
+	top: 0px;
+}
+
+.hero-backgb2 > img {
+	position: absolute;
+	top: 0px;
+}
+.hero-backgb3 > img {
+	position: absolute;
+	top: 0px;
+}
+
+.hero-rectangle > img {
+	position: absolute;
+	width: 20%;
+	left: 80%;
+	top: 95%;
+}
+
+.hero-para {
+	user-select: none;
+	position: absolute;
+	width: 30%;
+	left: 80px;
+	top: 146px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 42px;
+}
+
+.btn-start {
+	position: absolute;
+	width: 17%;
+	height: 58px;
+	left: 81px;
+	top: 350px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding-left: 60px;
+	color: #ffffff;
+	background: #ffb400;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.hero-hiddencost {
+	position: absolute;
+	width: 25%;
+	left: 80px;
+	top: 425px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.trusted-section {
+	position: absolute;
+	width: 20%;
+	left: 40%;
+	top: 550px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.trusted-badge1 {
+	position: absolute;
+	width: 17%;
+	height: 110px;
+	left: 7%;
+	top: 600px;
+	background: rgba(255, 255, 255, 0.98);
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
+
+.trusted-badge1 > img {
+	position: absolute;
+	left: 10%;
+	top: 15px;
+}
+.trusted-badge2 {
+	position: absolute;
+	width: 17%;
+	height: 110px;
+	left: 28%;
+	top: 600px;
+	background: rgba(255, 255, 255, 0.98);
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
+.trusted-badge2 > img {
+	position: absolute;
+	left: 15%;
+	top: 20px;
+}
+.trusted-badge3 {
+	position: absolute;
+	width: 17%;
+	height: 110px;
+	left: 49%;
+	top: 600px;
+	background: rgba(255, 255, 255, 0.98);
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
+.trusted-badge3 > img {
+	position: absolute;
+	left: 10%;
+	top: 20px;
+}
+
+.trusted-badge4 {
+	position: absolute;
+	width: 17%;
+	height: 110px;
+	left: 69%;
+	top: 600px;
+	background: rgba(255, 255, 255, 0.98);
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
+
+.trusted-badge4 > img {
+	position: absolute;
+	left: 10%;
+	top: 30px;
+}
+.bling-staysection {
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	left: 0px;
+	top: 770px;
+	background: linear-gradient(104.03deg, #ffdf08 19.3%, #ffc203 82.84%);
+}
+.bling-stay {
+	position: absolute;
+	width: 30%;
+	left: 40%;
+	top: 10%;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 48px;
+}
+.bling-stay-para {
+	position: absolute;
+	width: 50%;
+	left: 25%;
+	top: 110px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.bling-stay-tag1 {
+	position: absolute;
+	width: 20%;
+	left: 10%;
+	top: 40%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15.5px;
+	line-height: 18px;
+	display: flex;
+}
+.bling-stay-tag1img > img {
+	position: absolute;
+	left: 7%;
+	top: 40%;
+}
+.bling-stay-tag2 {
+	position: absolute;
+	width: 20%;
+	left: 10%;
+	top: 47%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15.5px;
+	line-height: 18px;
+}
+.bling-stay-tag2img > img {
+	position: absolute;
+	left: 7%;
+	top: 47%;
+}
+.bling-stay-tag3 {
+	position: absolute;
+	width: 20%;
+	left: 10%;
+	top: 54%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15.5px;
+	line-height: 18px;
+}
+.bling-stay-tag3img > img {
+	position: absolute;
+	left: 7%;
+	top: 54%;
+}
+.bling-stay-tag4 {
+	position: absolute;
+	width: 20%;
+	left: 10%;
+	top: 62%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15.5px;
+	line-height: 18px;
+}
+.bling-stay-tag4img > img {
+	position: absolute;
+	left: 7%;
+	top: 62%;
+}
+
+.bling-stay-tag5 {
+	position: absolute;
+	width: 20%;
+	left: 10%;
+	top: 69%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15.5px;
+}
+.bling-stay-tag5img > img {
+	position: absolute;
+	left: 7.2%;
+	top: 69%;
+}
+
+.bling-stay-tag6 {
+	position: absolute;
+	width: 25%;
+	left: 10%;
+	top: 77%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15.5px;
+}
+.bling-stay-tag6img > img {
+	position: absolute;
+	left: 7.1%;
+	top: 77%;
+}
+
+.bling-stay-tag7 {
+	position: absolute;
+	width: 20%;
+	left: 10%;
+	top: 85%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15.5px;
+	line-height: 18px;
+}
+.bling-stay-tag7img > img {
+	position: absolute;
+	left: 7%;
+	top: 85%;
+}
+
+.bling-stay-image > img {
+	position: absolute;
+	width: 70%;
+	left: 34%;
+	top: 148%;
+	filter: drop-shadow(8px 4px 50px rgba(0, 0, 0, 0.15));
+}
+.bling-card1 {
+	position: absolute;
+	width: 20%;
+	height: 50%;
+	top: 275%;
+	left: 13%;
+	background: #ffe600;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.bling-cardno1 > img {
+	position: absolute;
+	left: 14.5%;
+	top: 287%;
+}
+
+.bling-cardicon1 > img {
+	position: absolute;
+	left: 17%;
+	top: 285%;
+}
+.blingcardsignup1 {
+	position: absolute;
+	left: 17%;
+	top: 298%;
+}
+
+.blingcardtext {
+	position: absolute;
+	width: 15%;
+	left: 17%;
+	top: 306%;
+	font-size: 14px;
+}
+
+.bling-card2 {
+	position: absolute;
+	width: 20%;
+	height: 50%;
+	top: 275%;
+	left: 40%;
+	background: #ffe600;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.bling-cardno2 > img {
+	position: absolute;
+	left: 42%;
+	top: 287%;
+}
+
+.bling-cardicon2 > img {
+	position: absolute;
+	left: 44.5%;
+	top: 285%;
+}
+
+.blingcardcall2 {
+	position: absolute;
+	left: 44.5%;
+	top: 298%;
+}
+
+.blingcardcalltext2 {
+	position: absolute;
+	width: 15%;
+	left: 44.5%;
+	top: 1770px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.bling-card3 {
+	position: absolute;
+	width: 20%;
+	height: 50%;
+	top: 275%;
+	left: 67%;
+	background: #ffe600;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.bling-cardno3 {
+	position: absolute;
+	left: 69%;
+	top: 287%;
+}
+
+.bling-cardicon3 > img {
+	position: absolute;
+	left: 72%;
+	top: 285%;
+}
+
+.blingcardclient3 {
+	position: absolute;
+	left: 72%;
+	top: 298%;
+}
+
+.blingcardcalltext3 {
+	position: absolute;
+	width: 15%;
+	left: 72%;
+	top: 1770px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.center-main-img > img {
+	position: absolute;
+	width: 15%;
+	height: auto;
+	left: 43%;
+	top: 2117px;
+}
+
+.arrow1 {
+	position: absolute;
+	width: 70%;
+	left: -5px;
+	top: 1490px;
+	transform: rotate(-2.55deg);
+	z-index: -1;
+}
+.arrow1-head {
+	position: absolute;
+	left: 63.05%;
+	right: 31.83%;
+	top: 1475px;
+	transform: rotate(-26.08deg);
+}
+
+.center-dot1 > img {
+	position: absolute;
+	left: 20%;
+	top: 1990px;
+	filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.12));
+}
+
+.center-dotimg1 > img {
+	position: absolute;
+	width: 10%;
+	left: 25%;
+	top: 2020px;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+.center-dot2 > img {
+	position: absolute;
+	left: 71%;
+	top: 2000px;
+	filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.12));
+}
+
+.center-dotimg2 > img {
+	position: absolute;
+	width: 10%;
+	left: 65%;
+	top: 2020px;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+.center-dot-text1 {
+	position: absolute;
+	width: 20%;
+	left: 68%;
+	top: 2120px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.center-dot3 {
+	position: absolute;
+	left: 18%;
+	top: 2500px;
+	filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.12));
+}
+
+.center-dotimg3 > img {
+	position: absolute;
+	width: 10%;
+	left: 24%;
+	top: 2520px;
+	box-shadow: rgba(0, 0, 0, 0.25);
+}
+.center-dot-text2 {
+	position: absolute;
+	width: 15%;
+	left: 20%;
+	top: 2632px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.center-dot4 > img {
+	position: absolute;
+	left: 68%;
+	top: 2490px;
+	filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.12));
+}
+
+.center-dotimg4 > img {
+	position: absolute;
+	width: 10%;
+	left: 62%;
+	top: 2520px;
+	box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+.center-bkg-img > img {
+	position: absolute;
+	width: 110%;
+	left: 0%;
+	top: 2275px;
+}
+.center-arrow1 > img {
+	position: absolute;
+	left: 32%;
+	top: 2100.83px;
+}
+.center-arrow2 > img {
+	position: absolute;
+	left: 56%;
+	top: 2100px;
+}
+
+.center-arrow3 > img {
+	position: absolute;
+	width: 15%;
+	left: 30%;
+	top: 2320px;
+}
+.center-arrow4 > img {
+	width: 17%;
+	position: absolute;
+	left: 51%;
+	top: 2313.92px;
+}
+
+.calling-plan {
+	position: absolute;
+	width: 40%;
+	left: 32%;
+	top: 2750px;
+	box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+.calling-plan-text {
+	position: absolute;
+	width: 20%;
+	left: 43%;
+	top: 2845px;
+	font-size: 36px;
+}
+
+.card-basicplan > img {
+	position: absolute;
+	left: 7%;
+	top: 2860px;
+	border-radius: 10px;
+}
+
+.btn-basicplan {
+	position: absolute;
+	left: 18%;
+	top: 3427px;
+	width: 12.5%;
+	height: 44px;
+	background: linear-gradient(270deg, #ffb400 3.33%, #ffe600 56%);
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.card-plusplan > img {
+	position: absolute;
+	left: 33.5%;
+	top: 2900px;
+	border-radius: 10px;
+}
+
+.btn-plusplan {
+	position: absolute;
+	left: 45%;
+	top: 3425px;
+	width: 14%;
+	height: 50px;
+	background: linear-gradient(270deg, #ffb400 3.33%, #ffe600 56%);
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.card-proplan > img {
+	position: absolute;
+	left: 57%;
+	top: 2860px;
+	border-radius: 10px;
+}
+
+.btn-proplan {
+	position: absolute;
+	left: 73.5%;
+	top: 3427px;
+	width: 12.5%;
+	height: 44px;
+	background: linear-gradient(270deg, #ffb400 3.33%, #ffe600 56%);
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.card-background > img {
+	position: absolute;
+	left: 0px;
+	top: 2780px;
+}
+
+.card-arrow > img {
+	position: absolute;
+	width: 70%;
+	left: 417px;
+	top: 3220px;
+	z-index: -1;
+}
+
+.clients-expheader {
+	position: absolute;
+	width: 50%;
+	left: 30%;
+	top: 3630px;
+	font-size: 22px;
+}
+.client-card1 > img {
+	position: absolute;
+	top: 3700px;
+}
+.client-card2 {
+	position: absolute;
+	left: 20%;
+	top: 3700px;
+}
+
+.client-card3 {
+	position: absolute;
+	left: 54%;
+	top: 3700px;
+}
+.client-card4 {
+	position: absolute;
+	left: 86%;
+	top: 3700px;
+}
+.client-bkgimg {
+	position: absolute;
+	left: 13%;
+	top: 3550px;
+	z-index: -1;
+}
+
+.your-customerbkg > img {
+	position: absolute;
+	width: 110%;
+	top: 3960px;
+	background-color: rgba(255, 230, 0, 0.9);
+}
+.your-customerheader {
+	position: absolute;
+	left: 18%;
+	top: 4030px;
+	font-size: 30px;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.your-customerpara {
+	position: absolute;
+	width: 40%;
+	left: 30%;
+	top: 4101px;
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+}
+
+.your-customerbtn > img {
+	position: absolute;
+	left: 40%;
+	top: 4200px;
+}
+.your-customerarrow > img {
+	position: absolute;
+	width: 35%;
+	top: 3960.4px;
+}
+.your-customerarrowhead > img {
+	position: absolute;
+	left: 35%;
+	top: 4280px;
+}
+
+.twitter-icon > img {
+	position: absolute;
+	left: 8%;
+	top: 4470px;
+	padding-bottom: 30px;
+}
+.insta-icon > img {
+	position: absolute;
+	left: 11%;
+	top: 4470px;
+}
+.linkedin-icon > img {
+	position: absolute;
+	left: 14%;
+	top: 4470px;
+}
+.fb-icon > img {
+	position: absolute;
+	left: 17%;
+	top: 4470px;
+}
+.footer-bling > img {
+	position: absolute;
+	left: 45%;
+	top: 4441px;
+}
+.footer-copyright > img {
+	position: absolute;
+	left: 40%;
+	top: 4496px;
+}
+.footer-callicon > img {
+	position: absolute;
+	left: 76%;
+	top: 4450px;
+}
+.footer-callicon > p {
+	position: absolute;
+	left: 77.5%;
+	top: 4445px;
+}
+.footer-messageicon > img {
+	position: absolute;
+	left: 76%;
+	top: 4480px;
+}
+.footer-messageicon > p {
+	position: absolute;
+	left: 77.5%;
+	top: 4475px;
+}

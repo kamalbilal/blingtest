@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bling</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8" />
+
+		<!-- Font -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="fonts/beyond_the_mountains-webfont.css"
+			type="text/css"
+		/>
+
+		<!-- Stylesheets -->
+		<link href="plugin-frameworks/bootstrap.min.css" rel="stylesheet" />
+		<link href="plugin-frameworks/swiper.css" rel="stylesheet" />
+		<link href="fonts/ionicons.css" rel="stylesheet" />
+		<link href="common/styles.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/custombling_restaurant.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/vendors/mdi/css/materialdesignicons.min.css"
+		/>
+		<link rel="stylesheet" href="./assets/vendors/aos/dist/aos.css/aos.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./assets/vendors/owl.carousel/dist/assets/owl.theme.default.min.css"
+		/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/triangulation.js"></script>
+		<script type="text/javascript" src="assets/js/restaurant.js"></script>
+		<script type="text/javascript" src="./chat.js"></script>
+	</head>
+	<body>
+		<div id="snowflakeContainer">
+			<span class="snowflake"></span>
+		</div>
+		<div class="main-panel">
+			<header id="header" style="height: 11%; padding-top: 5px">
+				<div class="container">
+					<!-- partial:partials/_navbar.html -->
+					<nav
+						class="navbar navbar-expand-lg navbar-light"
+						style="padding-top: 2px"
+					>
+						<a class="navbar-brand" href="#"
+							><img
+								src="assets/images/bling_logo.png"
+								style="width: 100px"
+								alt=""
+						/></a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div
+							class="navbar-collapse justify-content-end collapse"
+							id="navbarSupportedContent"
+						>
+							<div class="d-flex justify-content-between">
+								<img
+									class="pl-3 d-block d-lg-none"
+									src="./assets/images/bling_logo.png"
+									style="width: 120px"
+									alt=""
+								/>
+								<button
+									class="d-inline-block d-lg-none navbar-toggler border-0 pt-2"
+									type="button"
+									data-target="#navbarSupportedContent"
+									aria-controls="navbarSupportedContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
+								>
+									<span>x</span>
+								</button>
+							</div>
+							<div class="d-lg-flex">
+								<ul
+									class="navbar-nav navbar-nav-right align-items-center pt-3 pt-lg-0"
+								>
+									<li class="nav-item">
+										<a class="nav-link" href="receptionist.html"
+											>Receptionist</a
+										>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="restaurant_backup.html">Restaurant</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+								</ul>
+								<ul class="navbar-nav align-items-center pt-2 pt-lg-0">
+									<li class="nav-item mt-2 mt-lg-0">
+										<button
+											class="btn btn-primary font-weight-bold btn-up"
+											onclick="window.location.href='schedule_call.html'"
+										>
+											Schedule Call
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<!-- partial -->
+				</div>
+			</header>
+		</div>
+
+		<div class="bg-1 h-700">
+		<div class="row overflow-hidden">
+			<div
+				class="col-12 col-md-6"
+				data-aos="fade-left"
+				style="
+				height: 700px;
+					background-image: url('./assets/images/bg-img-8.svg');
+					background-repeat: no-repeat;
+					background-position: left;
+				"
+			>
+				<div style="margin-top: 170px">
+					<div style="display: flex">
+						<div style="width: 5%"></div>
+						<h1 style="margin-top: 10px; font-family: Poppins">
+							Meet
+						</h1>
+
+						<p
+							style="
+								font-size: 35px;
+								font-weight: bold;
+								color: black;
+								font-family: 'Poppins';
+								margin-left: 15px;
+							"
+						>
+							BLING
+						</p>
+						<h1
+							style="
+								margin-top: 10px;
+								margin-left: 15px;
+								font-family: Poppins;
+							"
+						>
+							your human order taker
+						</h1>
+					</div>
+					<p
+						style="
+							font-family: Poppins;
+							font-size: 30px;
+							color: black;
+							margin-left: 5%;
+						"
+					>
+						You focus on your business,
+					</p>
+					<p
+						style="
+							font-family: Poppins;
+							font-size: 30px;
+							color: black;
+							margin-left: 5%;
+							line-height: 1rem;
+						"
+					>
+						Let Bling take the phone calls.
+					</p>
+					<button
+						class="btn btn-primary font-weight-bold btn-up"
+						onclick="window.location.href='schedule_call.html'"
+						style="
+							margin-left: 5%;
+							background-color: #ffd700;
+							color: #000;
+							margin-top: 90px;
+						"
+					>
+						GET STARTED
+					</button>
+					<button
+							class="btn btn-primary font-weight-bold btn-up"
+							onclick="window.location.href='restaurant_video.html'"
+							style="
+							margin-left: 5%;
+							background-color: #ffd700;
+							color: #000;
+							margin-top: 90px;
+						"
+					>
+						WATCH VIDEO
+					</button>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 h-700" data-aos="fade-right" style="background-color: orange">
+				<center><img src="./assets/images/Group 31.png" style="margin-top: 100px; width: 90%"/> </center>
+			</div>
+		</div>
+		</div>
+
+		<div style="padding: 60px; background-image: url('./assets/images/bback.png');
+				background-repeat: no-repeat;
+				background-size: cover;">
+			<div class="container">
+				<div data-aos="fade-up" class="partner-content-wrapper">
+					<div class="row justify-content-center">
+							<div style="display: flex">
+								<h1
+									style="
+										font-size: 120px;
+										font-weight: bold;
+										font-family: 'Poppins';
+									"
+								>
+									100%
+								</h1>
+								<div
+									style="
+										display: flex;
+										flex-direction: column;
+										margin-left: 10px;
+									"
+								>
+									<p style="font-size: 50px; color: #000">PHONE ORDERS</p>
+									<p style="font-size: 50px; margin-top: -45px; color: #000">
+										REVENUE
+									</p>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section
+			class="story-area left-text center-sm-text pos-relative"
+			style="
+				background-image: url('./assets/images/bg-img-3.svg');
+				background-repeat: no-repeat;
+				background-position: left;
+				z-index: -1;
+			"
+		>
+			<div class="abs-tbl bg-2 w-20 z--1 dplay-md-none"></div>
+			<div class="abs-tbr bg-3 w-20 z--1 dplay-md-none"></div>
+			<div class="container">
+				<div class="heading">
+					<img class="heading-img" src="./assets/images/bling_sign.png" alt="" />
+					<h2 style="font-family: 'Poppins'; font-weight: bold;  font-size: 35px">
+						Our Story
+					</h2>
+					<p style="color: #000">BLING takes your phone orders for you.</p>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-3"></div>
+					<div class="col-lg-5">
+					<p
+						class="mb-30"
+						data-aos="fade-right"
+						style="font-family: 'Poppins', sans-serif; color: #000;text-align:justify"
+					>
+						We leverage our pool of operators to automatically handle all your phone calls, adding
+						value at every point of interaction, allowing you to seamlessly
+						run your business.<br><br>
+						We operate with the goal of maximizing your returns while
+						minimizing lost revenue through efficient and smart phone-order
+						solutions.
+					</p>
+					</div>
+					<div class="col-lg-3"></div>
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</section>
+
+		<section class="story-area bg-seller color-white pos-relative">
+			<div class="pos-bottom triangle-up"></div>
+			<div class="pos-top triangle-bottom"></div>
+			<div class="container">
+				<div class="heading">
+					<img class="heading-img" src="./assets/images/bling_yellow_sign.png" alt="">
+					<h2 style="font-family: 'Poppins'; font-weight: bold; font-size: 35px">
+						What Bling will do for you
+					</h2>
+					<h4>We take 100% of your phone orders for you and ensure the following for you and your business:</h4>
+				</div>
+
+				<div class="row" data-aos="zoom-in">
+					<div class="col-lg-4 col-md-4  col-sm-4" style="margin-top:30px">
+						<div class="center-text mb-30">
+							<img src="./assets/images/Increase-Sales.jpeg" style="width: 60%" alt="">
+
+							<h5 class="mt-20">Increased Ticket Size</h5>
+						</div><!--text-center-->
+					</div><!-- col-md-3 -->
+
+					<div class="col-lg-4 col-md-4  col-sm-4 " style="margin-top:30px">
+						<div class="center-text mb-30">
+							<img src="./assets/images/increased_calls.jpeg" style="width: 60%" alt="">
+							<h5 class="mt-20">Increased Call/ Order Ratio</h5>
+						</div><!--text-center-->
+					</div><!-- col-md-3 -->
+
+					<div class="col-lg-4 col-md-4  col-sm-4 " style="margin-top:30px">
+						<div class="center-text mb-30">
+							<img src="./assets/images/upsell.jpeg" style="width: 60%" alt="">
+							<h5 class="mt-20">Upsell Product</h5>
+						</div><!--text-center-->
+					</div><!-- col-md-3 -->
+
+					<div class="col-lg-4 col-md-4  col-sm-4 " style="margin-top:30px">
+						<div class="center-text mb-30">
+							<img src="./assets/images/customization.jpeg" style="width: 100%" alt="">
+
+							<h5 class="mt-20">Customization and Personlization</h5>
+						</div><!--text-center-->
+					</div><!-- col-md-3 -->
+
+					<div class="col-lg-4 col-md-4  col-sm-4 " style="margin-top:30px">
+						<div class="center-text mb-30">
+							<img src="./assets/images/customers-icon-35913.png" style="width: 130px" alt="">
+							<h5 class="mt-20">Customer Satisfaction</h5>
+						</div><!--text-center-->
+					</div><!-- col-md-3 -->
+
+					<div class="col-lg-4 col-md-4  col-sm-4 " style="margin-top:30px">
+						<div class="center-text mb-30">
+							<img src="./assets/images/call_filter.jpeg" style="width: 80px" alt="">
+
+							<h5 class="mt-20">Call Filtering</h5>
+						</div><!--text-center-->
+					</div><!-- col-md-3 -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</section>
+
+		<div style="background-image: url('./assets/images/bg-img-1.svg'); background-repeat: no-repeat; background-position: center;">
+			<div class="row overflow-hidden" style="margin: 20px; padding-bottom: 54px;padding-top: 49px;">
+				<div class="col-lg-1">
+				</div>
+				<div class="col-sm-6 col-lg-4">
+					<div class="card mb-4 card-hover" data-aos="fade-up">
+						<div class="card-body" style=" box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); border-radius: 15px; background-color: #CCCCFF">
+							<center><p style="color: black; margin-top: 30px; font-size:20px; font-weight: bold; font-family: poppins">BLING PORTAL</p></center>
+							<span style="color: black; margin-top: 30px; font-family: roboto">
+								<ul>
+								  <li> - Track all the calls. </li><br><br>
+								  <li> - Enable and Disable Service at your will.</li><br><br>
+								  <li> - Talk to your account manager anytime.</li>
+								</ul>
+						  </span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-6">
+					<div data-aos="fade-left">
+						<img src="./assets/images/portal.png" alt="" style="width: 110%; border-radius: 10px ">
+					</div>
+				</div>
+				<div class="col-lg-1">
+				</div>
+			</div>
+
+				<div class="container">
+					<div class="heading">
+						<img class="heading-img" src="./assets/images/bling_sign.png" alt="" />
+						<!--                        <h2>Quality Ensured</h2>-->
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+							<ul class="selecton brdr-b-primary">
+								<li>
+									<a class="active" data-select="*"><b>Quality Ensured</b></a>
+								</li>
+							</ul>
+						</div>
+						<!--col-sm-12-->
+					</div>
+					<!--row-->
+
+					<div class="row pb-5 pt-5 overflow-hidden">
+						<div data-aos="zoom-in" class="col-sm-6 col-md-6">
+							<div class="card mb-4 card-hover">
+								<div
+										class="card-body"
+										style="box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15)"
+								>
+									<p style="color: black">
+										We know that you value your customers. We want you to know
+										that we value your customers too.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div data-aos="zoom-in" class="col-sm-6 col-md-6">
+							<div class="card mb-4 card-hover">
+								<div
+										class="card-body"
+										style="box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15)"
+								>
+									<p style="color: black">
+										Our pool of operators ensure that every call is answered and
+										meets the same quality standards as you expect ensuring a
+										great UX every time.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div>
+				<img src="./assets/images/Group 26.png" style="width: 100%" />
+			</div>
+		</div>
+
+		<div class="container">
+			<center><img class="heading-img" src="./assets/images/bling_sign.png" alt="" /></center>
+			<h2 class="text-center" style="font-family: 'Poppins'; font-weight: bold; font-size: 35px">WHAT CUSTOMERS ARE SAYING</h2>
+			<h4 class="text-center">We will always be there for you as a trusted partner, ready to help</h4>
+			<div class="row pb-5 pt-5 overflow-hidden">
+				<div data-aos="fade-up" class="col-sm-6 col-md-6">
+					<div class="card mb-4 card-hover">
+						<div style=" box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); border-radius: 15px; padding: 0px">
+							<img class="img-fluid" src="./assets/images/burger.jpeg" style="border-radius: 15px 15px 0px 0px; height: 230px; width:100%" alt=""/>
+							<div class="img-mini-box" style="margin-left: 30px; margin-top: -40px; width: 60px"><img src="./assets/images/carousel3.png" alt=""> </div>
+							<div style="padding: 1.88em"><p class="feature-sub-head font-italic text-color">Bling has made my life 10x simpler.
+								I don't even know how we were running for this long without them. They are so consistent in reaching out to mortgage
+								companies for me that I almost feel like I have another employee working for me.</p>
+								<h6 class="text-muted">Insurance Company</h6>
+								<h5>Sarah H.</h5></div>
+						</div>
+					</div>
+				</div>
+				<div data-aos="fade-up" class="col-sm-6 col-md-6">
+					<div class="card mb-4 card-hover">
+						<div style=" box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); border-radius: 15px; padding: 0px">
+							<img class="img-fluid" src="./assets/images/pizzaback.jpeg" style="border-radius: 15px 15px 0px 0px; height: 230px; width:100%" alt="" />
+							<div class="img-mini-box" style="margin-left: 30px; margin-top: -40px; width: 60px"><img src="./assets/images/carousel2.png" alt=""> </div>
+							<div style="padding: 1.88em"><p class="feature-sub-head font-italic text-color">They never miss a single phone call. My business is up almost 50% and my clients are happier than ever.
+								Bling sends them regular texts for things that I ask of them. Something I could never think possible.
+								We are already thinking about getting them to help out more.</p>
+								<h6 class="text-muted">Lawyer</h6>
+								<h5>Adam K.</h5></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<!-- container -->
+				<div>
+					<h2 class="text-center display-3 font-weight-bold">As easy as...</h2>
+					<div class="row pb-5 pt-5 overflow-hidden" style="margin: 10px">
+						<div data-aos="zoom-in" class="col-sm-6 col-md-4">
+							<div class="card mb-4 card-hover" style="border-radius: 20px">
+								<div
+										class="card-body"
+										style="
+									background-image: linear-gradient(#fdfd96, white);
+									border-radius: 20px;
+								"
+								>
+									<div class="d-flex">
+										<img
+												src="./assets/images/feature1.svg"
+												style="width: 100px"
+												alt=""
+										/>
+										<h4 class="pt-2 pl-3">1. Sign Up</h4>
+									</div>
+									<p class="feature-sub-head pt-3 text-muted font-weight-light">
+										We can get setup in less than a day.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div data-aos="zoom-in" class="col-sm-6 col-md-4">
+							<div class="card mb-4 card-hover" style="border-radius: 20px">
+								<div
+										class="card-body"
+										style="
+									background-image: linear-gradient(#fdfd96, white);
+									border-radius: 20px;
+								"
+								>
+									<div class="d-flex">
+										<img
+												src="./assets/images/feature2.svg"
+												style="width: 100px"
+												alt=""
+										/>
+										<h4 class="pt-2 pl-3">2. Call Forwarding</h4>
+									</div>
+									<p class="feature-sub-head pt-3 text-muted font-weight-light">
+										We forward all your phone calls to a dedicated Bling number
+										(don't worry, it is super easy and takes less than 2 mins)
+									</p>
+								</div>
+							</div>
+						</div>
+						<div data-aos="zoom-in" class="col-sm-6 col-md-4">
+							<div class="card mb-4 card-hover" style="border-radius: 20px">
+								<div
+										class="card-body"
+										style="
+									background-image: linear-gradient(#fdfd96, white);
+									border-radius: 20px;
+								"
+								>
+									<div class="d-flex">
+										<img
+												src="./assets/images/feature3.svg"
+												style="width: 100px"
+												alt=""
+										/>
+										<h4 class="pt-2 pl-3">3. You are Happy</h4>
+									</div>
+									<p class="feature-sub-head pt-3 text-muted font-weight-light">
+										Bling takes 100% of your phone calls. You, your employees and
+										your customers are very happy (it's literally that easy).
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
+
+
+
+		<div
+			style="display: flex; justify-content: space-around; margin-top: -50px"
+		>
+			<img src="./images/call1.png" style="width: 100px" />
+			<img src="./images/call2.png" style="width: 100px" />
+			<img src="./images/call3.png" style="width: 100px" />
+		</div>
+
+		<section
+			style="
+				background-image: url('./assets/images/bg-img-5.svg');
+				background-repeat: no-repeat;
+			"
+		>
+			<div class="container">
+				<div class="heading">
+					<img class="heading-img" src="./assets/images/bling_sign.png" alt="" />
+					<h2 style="font-family: 'Poppins', sans-serif; font-weight: 600">
+						Why Bling is Right For You
+					</h2>
+					<h4
+						style="
+							font-family: 'Poppins', sans-serif;
+							font-weight: 500;
+							margin-top: 30px;
+						"
+					>
+						We will always be there for you as a trusted partner, ready to help
+					</h4>
+				</div>
+				<div class="row pb-5 pt-5 overflow-hidden">
+					<div data-aos="fade-up" class="col-sm-6 col-md-4">
+						<div class="card mb-4 card-hover">
+							<div
+								class="card-body"
+								style="
+									box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+									border-radius: 15px;
+								"
+							>
+								<center>
+									<img
+										src="./assets/images/team.jpeg"
+										style="width: 150px"
+										alt=""
+									/>
+								</center>
+								<center>
+									<p
+										style="
+											color: black;
+											margin-top: 30px;
+											font-size: 20px;
+											font-weight: 500;
+										"
+									>
+										Maximize Your Team
+									</p>
+								</center>
+								<p style="color: black; margin-top: 30px">
+									Let your team focus on what's important - the food - and leave
+									the phone order taking to us.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-up" class="col-sm-6 col-md-4">
+						<div class="card mb-4 card-hover">
+							<div
+								class="card-body"
+								style="
+									box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+									border-radius: 15px;
+								"
+							>
+								<center>
+									<img
+										src="./assets/images/revenue_cost.jpeg"
+										style="width: 200px"
+										alt=""
+									/>
+								</center>
+								<center>
+									<p
+										style="
+											color: black;
+											margin-top: 30px;
+											font-size: 20px;
+											font-weight: 500;
+										"
+									>
+										Increase Your revenue
+									</p>
+								</center>
+								<p style="color: black; margin-top: 30px">
+									On average restaurants loose about 35-45% of their phone
+									calls. We bring all this revenue in.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-up" class="col-sm-6 col-md-4">
+						<div class="card mb-4 card-hover">
+							<div
+								class="card-body"
+								style="
+									box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+									border-radius: 15px;
+								"
+							>
+								<center>
+									<img
+										src="./assets/images/100satisfaction.png"
+										style="width: 120px"
+										alt=""
+									/>
+								</center>
+								<center>
+									<p
+										style="
+											color: black;
+											margin-top: 30px;
+											font-size: 20px;
+											font-weight: 500;
+										"
+									>
+										See better results
+									</p>
+								</center>
+								<p style="color: black; margin-top: 30px">
+									Assured improved metrics like Mean Ticket Size, Call/Order
+									Ratio, and Gross Monthly Volume.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer style="margin-top: 0px">
+			<div class="pos-top triangle-bottom"></div>
+			<div class="container-fluid">
+				<center>
+					<p
+						style="
+							font-size: 70px;
+							font-weight: bold;
+							font-family: 'Poppins';
+							margin-top: -40px;
+						"
+					>
+						PRICING
+					</p>
+				</center>
+				<div class="row pb-5 pt-5 overflow-hidden">
+					<div data-aos="flip-down" class="col-sm-6 col-md-6">
+						<center><div style="color: white; margin-top: 0px">
+							<div style="display: flex; justify-content: center">
+								<span style="font-size: 130px; font-weight: bold; font-family: poppins">1</span>
+								<div style="display: flex; flex-direction: column">
+									<p style="margin-right: 40px; font-size: 20px">SIMPLE PLAN</p>
+									<p style="margin-left: 20px; font-size: 20px">EVERYTHING SERVICE</p>
+								</div>
+							</div>
+							<p
+								style="
+									font-weight: bold;
+									font-size: 24px;
+								"
+							>
+								You get everything that Bling offers at the most competitive
+								price in the market.
+							</p>
+						</div>
+						</center>
+					</div>
+
+					<div data-aos="flip-up" class="col-sm-6 col-md-6">
+						<div
+							class="card-body"
+							style="
+								box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+								border-radius: 15px;
+								background-color: yellow;
+								width: 80%;
+							"
+						>
+							<center>
+								<h1
+									style="
+										color: black;
+										margin-top: 30px;
+										font-size: 40px;
+										font-weight: bold;
+										font-family: 'Poppins';
+									"
+								>
+									1 Week Free Trial
+								</h1>
+							</center>
+							<p style="color: black; margin-top: 20px; font-family: roboto">
+								Join this Week
+							</p>
+							<button
+								class="btn font-weight-medium btn-up"
+								type="submit"
+								style="background-color: black; color: white"
+							>
+								GET STARTED
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="container" style="background-color: #FFD700; padding:25px; border-radius: 5px; margin-top:50px">
+			<center><div class="row">
+				<div class="col-lg-3 col-md-2 col-sm-2">
+					<p style="color: black; font-size: 50px; "> 1,200 </p>
+					<p style="color: black; font-size: 20px"> calls </p>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-2">
+					<p style="color: black; font-size: 50px"> 10 </p>
+					<p style="color: black; font-size: 20px"> clients </p>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-2">
+					<p style="color: black; font-size: 50px"> 10,000 </p>
+					<p style="color: black; font-size: 20px"> hours </p>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-2">
+					<p style="color: black; font-size: 50px">20,000</p>
+					<p style="color: black; font-size: 20px"> happy customers </p>
+				</div>
+			</div></center>
+		</div>
+		<div class="bottom-wrapper">
+			<div class="gradient-wrapper" style="background-image: url('./assets/images/footerback.jpg');">
+
+				<div style="padding:30px">
+					<center>
+						<p style="color: black; font-weight: bold;  font-family: Poppins; font-size: 30px">We will pick the call you are always busy to take</p>
+						<p style="color: black; font-weight: bold;  font-family: Poppins; font-size: 30px"> and we will assist your clients in anyway we can</p>
+						<button class="btn btn-primary font-weight-bold btn-up" type="submit" style="margin-top: 20px; background-color: black; color: yellow">GET STARTED</button></center>
+				</div>
+				<!-- content-wrapper ends -->
+				<!-- partial:partials/_footer.html -->
+				<div class="container">
+					<div class="row footer-border pb-5">
+						<div class="col-sm-4 col-lg-3">
+							<img src="assets/images/bling_logo.png" style="width: 100px" alt="">
+							<p class="text-color">Your Virtual employee to accept all your incoming calls.</p>
+						</div>
+						<div class="col-sm-4 col-lg-3">
+							<h5>Contact</h5>
+							<ul class="pl-0 text-color" style="color: black !important">
+								<li><a href="#">24/7 Chat</a></li><br>
+								<li><a href="schedule_call.html">Schedule Call</a></li><br>
+								<li><a href="signup.html">Sign Up</a></li><br>
+								<li><a href="#">Email</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-lg-3">
+							<h5>Support</h5>
+							<ul class="pl-0 text-color">
+								<li><a href="#">Privacy Policy</a></li><br>
+								<li><a href="#">FAQ</a></li><br>
+								<li><a href="#">Terms & Conditions</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-lg-3">
+							<h5>Social</h5>
+							<div class="d-flex">
+								<div class="social-round-box">
+									<a href=""><span class="mdi mdi-facebook"></span></a>
+								</div>
+								<div class="social-round-box">
+									<a href=""><span class="mdi mdi-linkedin"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="text-center text-color" style="margin-bottom: 0px">© 2021 Bling Cloud Technologies. All rights reserved.</p>
+				</div>
+				<!-- partial -->
+				<div style="position: fixed; left: 0; bottom: 0; z-index: 100; width: 20%" id="promotion">
+					<div><button style="outline: none;" onclick="hidepromotion()"><img src="./assets/images/cancel-icon-png-12.jpg" style="width: 30px; "></button></div>
+					<button style="outline: none;" onclick="window.location.href='schedule_call.html'"><img src="./assets/images/Group 27.png" /></button>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- SCIPTS -->
+		<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
+		<script src="plugin-frameworks/bootstrap.min.js"></script>
+		<script src="plugin-frameworks/swiper.js"></script>
+		<!--<script src="common/scripts.js"></script>-->
+		<script src="assets/vendors/js/vendor.bundle.base.js"></script>
+		<!-- endinject -->
+		<!-- plugin js for this page -->
+		<script src="./assets/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+		<script src="./assets/vendors/aos/dist/aos.js/aos.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+		<!-- End plugin js for this page -->
+		<!-- Custom js for this page-->
+		<script src="./assets/js/demo.js"></script>
+	</body>
+</html>
